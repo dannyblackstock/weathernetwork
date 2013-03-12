@@ -5,3 +5,10 @@ POOPS LASTS FOREVER D:
 oK lah!
 
 merged again
+
+Using Sass Standalone
+With Foundation 4, we've removed all dependencies from the framework. This means you can use Foundaiton with Sass alone and add Compass, Bourbon, or whatever on top of it. To help get going using only Sass, you'll just need to download the files from Github (grab the scss/ and js/ directories) and put them into your project directory. From there you just need to @import the parts of Foundation you need.
+
+To import all of Foundation:
+
+@import "/path/to/foundation";
