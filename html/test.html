@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>test</title>
+
+  <link rel="stylesheet" href="../scss/test.css" />
+  <!--<link rel="stylesheet" href="css/app.css" />-->
+
+  <script src="../foundation-master/js/vendor/custom.modernizr.js"></script>
+
+</head>
 <body>
+	
+  <!-- body content here -->
+<!-- Basic orbit markup -->
 
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
 
+<div class="row">
+  <div class="small-2 large-4 columns showGrid">
+    column 1
+      <div class="round button">TEST</div>
+  </div>
+  <div class="small-4 large-4 columns showGrid">
+    column 2
+  </div>
+  <div class="small-6 large-4 columns showGrid">
+    column 3
+  </div>
+</div>
+
+<ul data-orbit>
+  <li>
+    <img src="../foundation-master/docs/img/demos/demo1.jpg" />
+    <div class="orbit-caption">...</div>
+  </li>
+  <li>
+    <img src="../foundation-master/docs/img/demos/demo2.jpg" />
+    <div class="orbit-caption">...</div>
+  </li>
+  <li>
+    <img src="../foundation-master/docs/img/demos/demo3.jpg" />
+    <div class="orbit-caption">...</div>
+  </li>
+</ul>
+
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? '../foundation-master/js/vendor/zepto' : '../foundation-master/js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="../foundation-master/js/foundation/foundation.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.alerts.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.clearing.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.cookie.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.dropdown.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.forms.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.joyride.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.magellan.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.orbit.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.placeholder.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.reveal.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.section.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.tooltips.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.topbar.js"></script>
+  <script>
+  $(document).foundation();
+  </script>
 </body>
 </html>

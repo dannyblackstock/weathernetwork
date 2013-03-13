@@ -4094,3 +4094,7 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.showGrid {
+  border: solid 1px #ccc;
+  background-color: #EEE; }
