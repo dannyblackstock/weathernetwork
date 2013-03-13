@@ -18,6 +18,7 @@
   <!-- body content here -->
 <div id="floatingSidebar">sidebar LOL</div>
 
+
 <div class="row">
   <div class="large-3 columns" data-magellan-expedition="fixed">
       <h3>How to change "agnostic style"....</h3>
@@ -63,6 +64,8 @@
 </div>
 
 <div class="round button">TEST</div>
+<a href="#" data-reveal-id="myModal"><div class="round button">Enter Location</div></a>
+
 
 <!-- Basic orbit markup -->
 <ul data-orbit data-magellan-destination="orbit" id="orbit">
@@ -108,5 +111,16 @@
   <script>
   $(document).foundation();
   </script>
+
+  <div id="myModal" class="reveal-modal">
+    <h2>Enter Location</h2>
+    <div class="row">
+      <div class="large-4 columns">
+        <input type="text" placeholder="Enter your city or 6-digit postal code">
+      </div></p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+  </div>
+
 </body>
 </html>
