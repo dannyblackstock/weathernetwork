@@ -13,3 +13,5 @@ once you have ruby installed, install sass in command line:
 example of using sass to generate ("watch") css file in command line:
 
 "sass --watch test.scss:test.css"
+
+The global scss variables are found scss/foundation/_foundation_global.scss
