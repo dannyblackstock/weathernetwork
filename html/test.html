@@ -18,6 +18,17 @@
   <!-- body content here -->
 <div id="floatingSidebar">sidebar LOL</div>
 
+<div class="row">
+  <div class="large-3 columns" data-magellan-expedition="fixed">
+      <h3>How to change "agnostic style"....</h3>
+      <ul class="side-nav">
+        <li data-magellan-arrival="orbit"><a href="#orbit">Orbit!</a></li>
+        <li data-magellan-arrival="longcat"><a href="#longcat">LONGCAT</a></li>
+      </ul>
+  </div>
+    <div class="large-9 columns"><p>http://jsfiddle.net/64DHX/</p></div>
+</div>
+
 <!-- small for small screen, large for large -->
 <div class="row">
   <div class="small-2 large-4 columns">...</div>
@@ -54,7 +65,7 @@
 <div class="round button">TEST</div>
 
 <!-- Basic orbit markup -->
-<ul data-orbit>
+<ul data-orbit data-magellan-destination="orbit" id="orbit">
   <li>
     <img src="../foundation-master/docs/img/demos/demo1.jpg" />
     <div class="orbit-caption">...</div>
@@ -69,6 +80,10 @@
   </li>
 </ul>
 
+<div>
+  <h1 id="longcat" data-magellan-destination="longcat">Longcat is long</h1>
+  <p><img src="http://placehold.it/500x4000&text=Longcat+is+long"></p>
+</div>
 
 
   <script>
