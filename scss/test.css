@@ -2730,7 +2730,7 @@ form.custom {
 @media only screen and (min-width: 48em) {
   .reveal-modal {
     padding: 1.875em;
-    top: 15em; }
+    top: 6.25em; }
     .reveal-modal.small {
       margin-left: -15%;
       width: 30%; }
@@ -3557,10 +3557,11 @@ kbd {
     to {
       position: relative; } } }
 [data-magellan-expedition] {
-  background: white;
   z-index: 997;
-  min-width: 100%;
-  padding: 10px; }
+  min-width: 30px;
+  padding: 10px;
+  position: fixed;
+  top: 100px; }
   [data-magellan-expedition] .sub-nav {
     margin-bottom: 0; }
     [data-magellan-expedition] .sub-nav dd {
@@ -4100,10 +4101,11 @@ table {
   background-color: #EEE; }
 
 #floatingSidebar {
-  position: fixed;
-  top: 50px;
-  left: 0;
-  width: 50px;
-  height: 300px;
-  background-color: red;
-  z-index: 5; }
+             /*
+position:fixed;
+top:50px;
+left:0;
+width:100px;
+height: 300px;*/
+  border: solid 1px #ccc;
+  background-color: #EEE; }

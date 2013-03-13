@@ -6,11 +6,12 @@ $magellan-bg: #fff !default;
 @if $include-html-magellan-classes {
 
   [data-magellan-expedition] {
-    background: $magellan-bg;
+    //background: $magellan-bg;
     z-index: 997;
-    min-width: 100%;
+    min-width: 30px; //changed to make it a sidebar instead. was "100%"
     padding: 10px;
-
+    position:fixed;
+    // top: 100px;
     .sub-nav {
       margin-bottom: 0;
       dd { margin-bottom: 0; }

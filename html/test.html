@@ -16,9 +16,14 @@
 <body>
 	
   <!-- body content here -->
-<div id="floatingSidebar">sidebar LOL</div>
+<div id="floatingSidebar" data-magellan-expedition="fixed">
+      <ul class="side-nav">
+        <li data-magellan-arrival="orbit"><a href="#orbit">Orbit!</a></li>
+        <li data-magellan-arrival="longcat"><a href="#longcat">LONGCAT</a></li>
+      </ul>
+</div>
 
-
+<!--
 <div class="row">
   <div class="large-3 columns" data-magellan-expedition="fixed">
       <h3>How to change "agnostic style"....</h3>
@@ -27,10 +32,14 @@
         <li data-magellan-arrival="longcat"><a href="#longcat">LONGCAT</a></li>
       </ul>
   </div>
+-->
+  <!--
+  What is this madness?
     <div class="large-9 columns"><p>http://jsfiddle.net/64DHX/</p></div>
+  -->
 </div>
 
-<!-- small for small screen, large for large -->
+<!-- small for small screen, large for large. testing some rows. -->
 <div class="row">
   <div class="small-2 large-4 columns">...</div>
   <div class="small-4 large-4 columns">...</div>
@@ -45,47 +54,34 @@
   <div class="small-6 large-2 columns">...</div>
   <div class="small-6 large-8 columns">...</div>
   <div class="small-12 large-2 columns">...</div>
-</div>
-<div class="row">
-  <div class="small-3 columns">...</div>
-  <div class="small-9 columns">...</div>
-</div>
-<div class="row">
-  <div class="large-4 columns">...</div>
-  <div class="large-8 columns">...</div>
-</div>
-<div class="row">
-  <div class="small-6 large-5 columns">...</div>
-  <div class="small-6 large-7 columns">...</div>
-</div>
-<div class="row">
-  <div class="large-6 columns">...</div>
-  <div class="large-6 columns">...</div>
-</div>
+
 
 <div class="round button">TEST</div>
 <a href="#" data-reveal-id="myModal"><div class="round button">Enter Location</div></a>
 
 
 <!-- Basic orbit markup -->
-<ul data-orbit data-magellan-destination="orbit" id="orbit">
-  <li>
-    <img src="../foundation-master/docs/img/demos/demo1.jpg" />
-    <div class="orbit-caption">...</div>
-  </li>
-  <li>
-    <img src="../foundation-master/docs/img/demos/demo2.jpg" />
-    <div class="orbit-caption">...</div>
-  </li>
-  <li>
-    <img src="../foundation-master/docs/img/demos/demo3.jpg" />
-    <div class="orbit-caption">...</div>
-  </li>
-</ul>
 
-<div>
-  <h1 id="longcat" data-magellan-destination="longcat">Longcat is long</h1>
-  <p><img src="http://placehold.it/500x4000&text=Longcat+is+long"></p>
+<div style="width:400px"> <!-- sorry the huge orbit was bothering me. -->
+  <ul data-orbit data-magellan-destination="orbit" id="orbit">
+    <li>
+      <img src="../foundation-master/docs/img/demos/demo1.jpg" />
+      <div class="orbit-caption">...</div>
+    </li>
+    <li>
+      <img src="../foundation-master/docs/img/demos/demo2.jpg" />
+      <div class="orbit-caption">...</div>
+    </li>
+    <li>
+      <img src="../foundation-master/docs/img/demos/demo3.jpg" />
+      <div class="orbit-caption">...</div>
+    </li>
+  </ul>
+
+  <div>
+    <h1 id="longcat" data-magellan-destination="longcat">Longcat is long</h1>
+    <p><img src="http://placehold.it/500x4000&text=Longcat+is+long"></p>
+  </div>
 </div>
 
 
