@@ -12,52 +12,36 @@
 
   <script src="../foundation-master/js/vendor/custom.modernizr.js"></script>
 
+
+  <!-- jQuery autocomplete searchbar. coped from the demo, not sure how to use the
+  Foundation jQuery... -->
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+    $("input#autocomplete").autocomplete({
+      // searchable item list
+      source: ["Athens, Georgia", "Athens, Greece", "Coquitlam, British Columbia", "Surrey, British Columbia", "Burnaby, British Columbia", "Richmond, British Columbia", "Athens, Ontario"]
+      });
+    });
+  </script>
+
 </head>
+
 <body>
-	
-  <!-- body content here -->
+
+<!-- jQuery autocomplete searchbar.-->
+<input id="autocomplete" />
+
+<!-- sidebar -->
 <div id="floatingSidebar" data-magellan-expedition="fixed">
       <ul class="side-nav">
         <li data-magellan-arrival="orbit"><a href="#orbit">Orbit!</a></li>
         <li data-magellan-arrival="longcat"><a href="#longcat">LONGCAT</a></li>
       </ul>
 </div>
-
-<!--
-<div class="row">
-  <div class="large-3 columns" data-magellan-expedition="fixed">
-      <h3>How to change "agnostic style"....</h3>
-      <ul class="side-nav">
-        <li data-magellan-arrival="orbit"><a href="#orbit">Orbit!</a></li>
-        <li data-magellan-arrival="longcat"><a href="#longcat">LONGCAT</a></li>
-      </ul>
-  </div>
--->
-  <!--
-  What is this madness?
-    <div class="large-9 columns"><p>http://jsfiddle.net/64DHX/</p></div>
-  -->
-</div>
-
-<!-- small for small screen, large for large. testing some rows. -->
-<div class="row">
-  <div class="small-2 large-4 columns">...</div>
-  <div class="small-4 large-4 columns">...</div>
-  <div class="small-6 large-4 columns">...</div>
-</div>
-<div class="row">
-  <div class="large-3 columns">...</div>
-  <div class="large-6 columns">...</div>
-  <div class="large-3 columns">...</div>
-</div>
-<div class="row">
-  <div class="small-6 large-2 columns">...</div>
-  <div class="small-6 large-8 columns">...</div>
-  <div class="small-12 large-2 columns">...</div>
-
-
-<div class="round button">TEST</div>
-<a href="#" data-reveal-id="myModal"><div class="round button">Enter Location</div></a>
 
 
 <!-- Basic orbit markup -->
@@ -84,7 +68,6 @@
   </div>
 </div>
 
-
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? '../foundation-master/js/vendor/zepto' : '../foundation-master/js/vendor/jquery') +
@@ -108,6 +91,7 @@
   $(document).foundation();
   </script>
 
+  <!-- location button -->
   <div id="myModal" class="reveal-modal">
     <h2>Enter Location</h2>
     <div class="row">
