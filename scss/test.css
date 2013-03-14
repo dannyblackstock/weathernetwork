@@ -4109,3 +4109,8 @@ width:100px;
 height: 300px;*/
   border: solid 1px #ccc;
   background-color: #EEE; }
+
+  #locationButton{
+    font-size: 35px;
+    color: #0caee3;
+  }
