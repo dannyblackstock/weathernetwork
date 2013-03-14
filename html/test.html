@@ -8,6 +8,7 @@
   <title>test</title>
 
   <link rel="stylesheet" href="../scss/test.css" />
+    <link rel="stylesheet" href="../foundation_icons_all/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css" />
   <!--<link rel="stylesheet" href="css/app.css" />-->
 
   <script src="../foundation-master/js/vendor/custom.modernizr.js"></script>
@@ -25,6 +26,24 @@
 
 <!-- jQuery autocomplete searchbar.-->
 <input id="autocomplete" />
+
+<!-- location button -->
+<div id="locationButton">
+  <a href="#" data-reveal-id="myModal">
+    <i class="foundicon-location"></i>
+  </a>
+</div>
+
+<div id="myModal" class="reveal-modal">
+     <h2>Enter Location</h2>
+    <div class="row">
+      <div class="large-4 columns">
+        <input type="text" placeholder="Enter your city">
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+</div>
 
 <!-- sidebar -->
 <div id="floatingSidebar" data-magellan-expedition="fixed">
@@ -92,19 +111,6 @@
     });
   </script>
 
-  <!-- location button -->
-  <div id="myModal" class="reveal-modal">
-    <h2>Enter Location</h2>
-    <div class="row">
-      <div class="large-4 columns">
-        <input type="text" placeholder="Enter your city or 6-digit postal code">
-      </div>
-<!--       <a class="close-reveal-modal"> -->
-        <div class="round button">Save</div>
-<!--       </a> -->
-      <a class="close-reveal-modal">&#215;</a>
-    </div>
-  </div>
 
 </body>
 </html>
