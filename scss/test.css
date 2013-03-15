@@ -4113,41 +4113,65 @@ height: 300px;*/
   font-size: 35px;
   color: #0caee3; }
 
-/* Gridster styles */
-.demo {
-  margin: 3em 0;
-  padding: 7.5em 0 5.5em;
-  background: #004756; }
+/* SHAPESHIFTER DEMO STYLES */
+.credits {
+  background: #DEDEDE;
+  font-size: 13px;
+  padding: 20px 0 13px 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0;
+  text-align: center; }
 
-.demo:hover .gridster {
-  opacity: 1; }
+.credits img {
+  height: 75px;
+  width: 84px;
+  padding: 4px; }
 
-.gridster {
-  width: 940px;
-  margin: 0 auto;
-  opacity: .8;
-  -webkit-transition: opacity .6s;
-  -moz-transition: opacity .6s;
-  -o-transition: opacity .6s;
-  -ms-transition: opacity .6s;
-  transition: opacity .6s; }
+.container {
+  outline: 1px dashed #CCC;
+  float: left;
+  margin: 0 0 0 2%;
+  position: relative;
+  width: 47%; }
 
-.gridster .gs_w {
-  background: #FFF;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+.container .object {
+  border: 1px solid #777;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px 1px #ccc;
+  position: absolute;
+  width: 170px; }
 
-.gridster .player {
-  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); }
+.container .object .placeholder {
+  width: 170px; }
 
-.gridster .gs_w.try {
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
-  background-position: 37px -169px; }
+.container .object.ss-moving {
+  cursor: move;
+  z-index: 9999;
+  opacity: .7;
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  /* IE 9 */
+  -moz-transform: rotate(2deg);
+  /* Firefox */
+  -webkit-transform: rotate(2deg);
+  /* Safari and Chrome */
+  -o-transform: rotate(2deg);
+  /* Opera */ }
 
-.gridster .preview-holder {
-  border: none !important;
-  border-radius: 0 !important;
-  background: rgba(255, 255, 255, 0.2) !important; }
+.container .object img {
+  border-radius: 2px 2px 0 0; }
+
+@media screen and (max-width: 1200px) {
+  .container .object {
+    width: 120px; }
+
+  .container .object .placeholder {
+    width: 120px; } }
+@media screen and (max-width: 800px) {
+  .container .object {
+    width: 90px; }
+
+  .container .object .placeholder {
+    width: 90px; } }

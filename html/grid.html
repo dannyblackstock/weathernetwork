@@ -8,11 +8,10 @@
   <title>test</title>
 
   <link rel="stylesheet" href="../scss/test.css" />
+    <link rel="stylesheet" href="../foundation_icons_all/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css" />
   <!--<link rel="stylesheet" href="css/app.css" />-->
 
   <script src="../foundation-master/js/vendor/custom.modernizr.js"></script>
-
-
 
 
   <!-- jQuery autocomplete searchbar. coped from the demo, not sure how to use the
@@ -20,13 +19,52 @@
   <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    
 
+<!-- SHAPESHIFTER LIBRARIES & FILES -->
+
+    <!-- Required Libraries -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <!-- Core Files -->
+    <script type="text/JavaScript" src="../shapeshift/core/vendor/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/JavaScript" src="../shapeshift/core/jquery.shapeshift.js"></script>
+
+    <!-- Template Files -->
+    <link href="../shapeshift/demo/template/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../shapeshift/demo/template/template.css" rel="stylesheet" type="text/css" />
+    <script type="text/JavaScript" src="../shapeshift/demo/template/template.js"></script>
+
+    <!-- Demo Files -->
+    <!--<link href="demo.css" rel="stylesheet" type="text/css" />-->
+    <script type="text/JavaScript" src="../shapeshift/demo/demo.js"></script>
 </head>
 
 <body>
 
 <!-- jQuery autocomplete searchbar.-->
 <input id="autocomplete" />
+
+<div class="container"></div>
+
+<!-- location button -->
+<div id="locationButton">
+  <a href="#" data-reveal-id="myModal">
+    <i class="foundicon-location"></i>
+  </a>
+</div>
+
+<div id="myModal" class="reveal-modal">
+     <h2>Enter Location</h2>
+    <div class="row">
+      <div class="large-4 columns">
+        <input type="text" placeholder="Enter your city">
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+</div>
 
 <!-- sidebar -->
 <div id="floatingSidebar" data-magellan-expedition="fixed">
@@ -94,19 +132,6 @@
     });
   </script>
 
-  <!-- location button -->
-  <div id="myModal" class="reveal-modal">
-    <h2>Enter Location</h2>
-    <div class="row">
-      <div class="large-4 columns">
-        <input type="text" placeholder="Enter your city or 6-digit postal code">
-      </div>
-<!--       <a class="close-reveal-modal"> -->
-        <div class="round button">Save</div>
-<!--       </a> -->
-      <a class="close-reveal-modal">&#215;</a>
-    </div>
-  </div>
 
 </body>
 </html>
