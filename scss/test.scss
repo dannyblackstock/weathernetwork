@@ -56,12 +56,13 @@
 .container .object.ss-moving {
   cursor: move;
   z-index: 9999;
-  opacity: .7;
-  transform:rotate(2deg);
-  -ms-transform:rotate(2deg); /* IE 9 */
-  -moz-transform:rotate(2deg); /* Firefox */
-  -webkit-transform:rotate(2deg); /* Safari and Chrome */
-  -o-transform:rotate(2deg); /* Opera */
+  opacity: .7;/*
+  transform:rotate(0deg);
+  -ms-transform:rotate(0deg);  IE 9 
+  -moz-transform:rotate(0deg);  Firefox 
+  -webkit-transform:rotate(0deg);  Safari and Chrome 
+  -o-transform:rotate(0deg);  Opera 
+  */
 }
 
 .container .object img { border-radius: 2px 2px 0 0; }
