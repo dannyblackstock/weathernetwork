@@ -21,184 +21,183 @@
 </head>
 
 <body>
+
+<!-- LOGO AND SEARCH -->
 <div class="row">
-  <div class="large-12 columns">
-
-    <!-- Navigation -->
-      <nav class="top-bar">
-        <ul class="title-area">
-          <!-- Title Area -->
-          <li class="name">
-            <h1>
-              <a href="#">
-                Top Bar Title
-              </a>
-            </h1>
+  <div class="large-2 small-2 columns">
+    <img src="http://placehold.it/166">
+  </div>
+  <div class="large-10 small-10 columns">
+    <nav class="top-bar">
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="has-button">
+            <a class="small button" href="#">Search icon</a>
           </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+          <li class="search">
+            <form>
+              <input type="search">
+            </form>
+          </li>
         </ul>
-
-        <section class="top-bar-section">
-          <ul class="left">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-          </ul>
-
-          <ul class="right">
-            <li class="search">
-              <form>
-                <input type="search">
-              </form>
-            </li>
-
-            <li class="has-button">
-              <a class="small button" href="#">Search</a>
-            </li>
-          </ul>
-        </section>
+      </section>
     </nav>
-    <!-- End Navigation -->
-
   </div>
 </div>
 
-
-  <div class="row">
-    <div class="large-12 columns">
-      <ul data-orbit data-options="timer_paused_class: paused; bullets: false;">
-        <li><img src="http://placehold.it/1000x400&text=City 1" alt="slide image"></li>
-        <li><img src="http://placehold.it/1000x400&text=City 2" alt="slide image"></li>
-      </ul>
-    </div>
-  </div><br>
-
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="row">
-
-    <!-- Thumbnails -->
-        <ul class="large-12 columns button-group even-3">
-          <li><a href="#" class="button">
-            <img src="http://placehold.it/333x150&text=Forecast" />
-            <h6 class="">Description</h6></a>
-          </li>
-          <li><a href="#" class="button">
-            <img src="http://placehold.it/333x150&text=Maps" />
-            <h6 class="">Description</h6></a>
-          </li>
-          <li><a href="#" class="button">
-            <img src="http://placehold.it/333x150&text=News+and+Media" />
-            <h6 class="">Description</h6></a>
-          </li>
-        </ul>
-    <!-- End Thumbnails -->
-
-      </div>
-    </div>
+<!-- CITY INDICATOR -->
+<div class="row">
+  <div class="large-12 columns">
+    <h2>Vancouver</h2>
   </div>
+</div>
 
-
-
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="row">
-
-    <!-- Content -->
-
-        <div class="large-8 columns">
-          <div class="panel radius">
-
+<!-- MAIN AREA -->       <!-- BEWARE: The images on the tabs are nonresponsive. And IDK why it messes up half the time lol -->
+<div class="row">
+  <div class="large-12 columns">
+    <div class="section-container tabs" data-section="tabs">
+      <!-- Weather -->
+      <section class="section">
+        <p class="title button"><a href="#weather"> <img src="http://placehold.it/248x60&text=Forecast" /> </a></p>
+        <div class="content">
           <div class="row">
-          <div class="large-6 small-6 columns">
-
-            <h4>Header</h4><hr/>
-            <h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.
-            </h5>
-
-          <div class="show-for-small" align="center">
-            <a href="#" class="small radius button">Call To Action!</a><br>
-
-            <a href="#" class="small radius button">Call To Action!</a>
+            <div class="large-8 columns">
+              <div class="row">
+                <div class="large-4 columns">
+                  <img src="http://placehold.it/175">
+                </div>
+                <div class="large-4 columns">
+                  <h3 class="temperature">7&deg;</h3>
+                </div>
+                <div class="large-4 columns">
+                  <dl>
+                    <dt>Feels Like:</dt><dd>5&deg;</dd>
+                    <dt>Feels Like:</dt><dd>5&deg;</dd>
+                    <dt>Feels Like:</dt><dd>5&deg;</dd>
+                    <dt>Feels Like:</dt><dd>5&deg;</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <h4>Herr Forecast</h4><hr>
+                  <div class="row">
+                    <div class="large-3 columns">
+                      <p><img src="http://placehold.it/100"></p>
+                      7&deg;
+                    </div>
+                    <div class="large-3 columns">
+                      <p><img src="http://placehold.it/100"></p>
+                      7&deg;
+                    </div>
+                    <div class="large-3 columns">
+                      <p><img src="http://placehold.it/100"></p>
+                      7&deg;
+                    </div>
+                    <div class="large-3 columns">
+                      <p><img src="http://placehold.it/100"></p>
+                      7&deg;
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="large-4 columns"> 
+              <h4>Whart to where</h4><hr>
+              <img src="http://placehold.it/300x400">
+            </div>
           </div>
+        </div>
+      </section>
 
+      <!-- Maps -->
+      <section class="section">
+        <p class="title button"><a href="#maps"> <img src="http://placehold.it/248x60&text=Maps" /> </a></p>
+        <div class="content">
+          <p><img src="http://www.theweathernetwork.com/common/maps/satrad/westcoast/is_satrad_na_ca_westcoast_all_en.jpg"></p>
+        </div>
+      </section>
+      
+      <!-- News / Media -->
+      <section class="section">
+        <p class="title button"><a href="#newsmedia"> <img src="http://placehold.it/248x60&text=News+and+Media" /> </a></p>
+        <div class="content">
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="section-container accordion" data-section>
+                <section class="section">
+                  <p class="title"><a href="#panel1">Section 1</a></p>
+                </section>
+                <section class="section">
+                  <p class="title"><a href="#panel2">Section 2</a></p>
+                </section>
+                <section class="section">
+                  <p class="title"><a href="#panel2">Section 3</a></p>
+                </section>
+                <section class="section">
+                  <p class="title"><a href="#panel2">Section 4</a></p>
+                </section>
+              </div>
+              <p>hellow worlds wtf ok do this later</p>
+            </div>
+            <div class="large-4 columns">
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+                <div class="orbit-caption">Trying to overlay this inside the img</div>
+              </a> 
+            </div>
+            <div class="large-4 columns">
+
+            </div>
           </div>
-          <div class="large-6 small-6 columns">
-
-            <p>Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.
-          </p>
         </div>
+      </section>
+    </div>
+  </div>
+</div>
 
-        </div>
-        </div>
-        </div>
-
-        <div class="large-4 columns hide-for-small">
-
-          <h4>Get In Touch!</h4><hr/>
-
-          <a href="#">
-          <div class="panel radius callout" align="center">
-            <strong>Call To Action!</strong>
-          </div>
-          </a>
-
-          <a href="#">
-          <div class="panel radius callout" align="center">
-            <strong>Call To Action!</strong>
-          </div>
-          </a>
-
-        </div>
-
-    <!-- End Content -->
-
+<!-- Footer -->
+<footer class="row">
+  <div class="large-12 columns">
+    <hr>
+    <div class="row">
+      <div class="large-6 columns">
+        <p>&copy; Copyright no one at all. Go to town.</p>
+      </div>
+      <div class="large-6 columns">
+        <ul class="inline-list right">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
       </div>
     </div>
   </div>
+</footer>
 
-    <!-- Footer -->
-
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr>
-      <div class="row">
-        <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? '../foundation-master/js/vendor/zepto' : '../foundation-master/js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  <script src="../foundation-master/js/foundation/foundation.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.alerts.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.clearing.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.cookie.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.dropdown.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.forms.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.joyride.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.magellan.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.orbit.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.placeholder.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.reveal.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.section.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.tooltips.js"></script>
-  <script src="../foundation-master/js/foundation/foundation.topbar.js"></script>
-  <script>
-  $(document).foundation();
-  </script>
+<script>
+document.write('<script src=' +
+('__proto__' in {} ? '../foundation-master/js/vendor/zepto' : '../foundation-master/js/vendor/jquery') +
+'.js><\/script>')
+</script>
+<script src="../foundation-master/js/foundation/foundation.js"></script>
+<script src="../foundation-master/js/foundation/foundation.alerts.js"></script>
+<script src="../foundation-master/js/foundation/foundation.clearing.js"></script>
+<script src="../foundation-master/js/foundation/foundation.cookie.js"></script>
+<script src="../foundation-master/js/foundation/foundation.dropdown.js"></script>
+<script src="../foundation-master/js/foundation/foundation.forms.js"></script>
+<script src="../foundation-master/js/foundation/foundation.joyride.js"></script>
+<script src="../foundation-master/js/foundation/foundation.magellan.js"></script>
+<script src="../foundation-master/js/foundation/foundation.orbit.js"></script>
+<script src="../foundation-master/js/foundation/foundation.placeholder.js"></script>
+<script src="../foundation-master/js/foundation/foundation.reveal.js"></script>
+<script src="../foundation-master/js/foundation/foundation.section.js"></script>
+<script src="../foundation-master/js/foundation/foundation.tooltips.js"></script>
+<script src="../foundation-master/js/foundation/foundation.topbar.js"></script>
+<script>
+$(document).foundation();
+</script>
 
 </body>
 </html>
