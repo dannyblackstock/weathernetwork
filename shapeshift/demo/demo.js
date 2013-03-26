@@ -5,7 +5,7 @@ $(document).ready(function() {
   // - Generate some fake elements
   // ----------------------------------------------------------------------
 
-  // This just renders us some random temporary children
+/*  // This just renders us some random temporary children
   function renderChildren(placekitten) {
     $containers.children().filter(":not(.credits)").remove();
     $containers.each(function(container_i) {
@@ -34,12 +34,14 @@ $(document).ready(function() {
     }
     return color;
   }
+*/
 
   // Initial Shapeshift
   $containers.shapeshift({
     paddingY: 20
   });
 
+/*
   // ----------------------------------------------------------------------
   // - Clicking the filter options
   // ----------------------------------------------------------------------
@@ -96,7 +98,7 @@ $(document).ready(function() {
 
     $containers.trigger("ss-event-arrange")
   });
-
+*/
   // ----------------------------------------------------------------------
   // - Drag and Drop events for shapeshift
   // ----------------------------------------------------------------------

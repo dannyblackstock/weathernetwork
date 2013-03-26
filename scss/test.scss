@@ -38,7 +38,7 @@
   float: left;
   margin: 0 0 0 2%;
   position: relative;
-  width: 47%;
+  width: 1100px;
 }
 
 .container .object {
@@ -46,11 +46,33 @@
   border-radius: 3px;
   box-shadow: 0px 0px 4px 1px #ccc;
   position: absolute;
-  width: 170px;
+  //width: 170px;
+}
+
+.container .object .currentWeather {
+    width: 1000px;
+    height: 280px;
+}
+
+.container .whatToWear {
+  width: 250px;
+  height: 250px;
+  background-color: #3380A8;
+}
+
+.container .object .sevenDayForecast {
+    width: 890px;
+    height: 201px;
+}
+
+.container .object .sevenDayForecast {
+    width: 890px;
+    height: 201px;
 }
 
 .container .object .placeholder {
   width: 170px;
+  height:170px;
 }
 
 .container .object.ss-moving {
@@ -67,24 +89,33 @@
 
 .container .object img { border-radius: 2px 2px 0 0; }
 
-@media screen and (max-width: 1200px) {
-  .container .object {
-    width: 120px;
-  }
+// @media screen and (max-width: 1200px) {
 
-  .container .object .placeholder {
-    width: 120px;
-  }
-}
+//   .container .object {
+//   border: 1px solid #777;
+//   border-radius: 3px;
+//   box-shadow: 0px 0px 4px 1px #ccc;
+//   position: absolute;
 
-@media screen and (max-width: 800px) {
-  .container .object {
-    width: 90px;
-  }
+//   }
+//     .container .currentWeather {
+//     width: 589px;
+//     height: 280px;
+//   }
 
-  .container .object .placeholder {
-    width: 90px;
-  }
-}
+//   .container .object .placeholder {
+//     width: 120px;
+//   }
+// }
+
+// @media screen and (max-width: 800px) {
+//   .container .object {
+//     width: 90px;
+//   }
+
+//   .container .object .placeholder {
+//     width: 90px;
+//   }
+// }
 
 
