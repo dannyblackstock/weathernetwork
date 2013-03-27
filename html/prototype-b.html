@@ -24,24 +24,14 @@
 
 <!-- LOGO AND SEARCH -->
 <div class="row">
-  <div class="large-2 small-2 columns">
+  <div class="small-2 columns">
     <img src="http://placehold.it/166">
   </div>
-  <div class="large-10 small-10 columns">
-    <nav class="top-bar">
-      <section class="top-bar-section">
-        <ul class="left">
-          <li class="has-button">
-            <a class="small button" href="#">Search icon</a>
-          </li>
-          <li class="search">
-            <form>
-              <input type="search">
-            </form>
-          </li>
-        </ul>
-      </section>
-    </nav>
+  <div class="small-1 columns">
+    <label for="right-label" class="right">icon</label>
+  </div>
+  <div class="small-9 columns">
+    <input id="autocomplete" type="text" placeholder="Search">
   </div>
 </div>
 
@@ -71,10 +61,10 @@
                 </div>
                 <div class="large-4 columns">
                   <dl>
-                    <dt>Feels Like:</dt><dd>5&deg;</dd>
-                    <dt>Feels Like:</dt><dd>5&deg;</dd>
-                    <dt>Feels Like:</dt><dd>5&deg;</dd>
-                    <dt>Feels Like:</dt><dd>5&deg;</dd>
+                    <dt>Feels Like:</dt><dd>7&deg;</dd>
+                    <dt>Wind:</dt><dd>N 5km/h</dd>
+                    <dt>Humidity:</dt><dd>50%</dd>
+                    <dt>P.O.P.:</dt><dd>30%</dd>
                   </dl>
                 </div>
               </div>
@@ -124,30 +114,64 @@
         <div class="content">
           <div class="row">
             <div class="large-4 columns">
-              <div class="section-container accordion" data-section>
-                <section class="section">
-                  <p class="title"><a href="#panel1">Section 1</a></p>
-                </section>
-                <section class="section">
-                  <p class="title"><a href="#panel2">Section 2</a></p>
-                </section>
-                <section class="section">
-                  <p class="title"><a href="#panel2">Section 3</a></p>
-                </section>
-                <section class="section">
-                  <p class="title"><a href="#panel2">Section 4</a></p>
-                </section>
-              </div>
-              <p>hellow worlds wtf ok do this later</p>
+              <a class="th" href="#">
+                <h6>News</h6>
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <h6>More...</h6>
+              </a>
             </div>
             <div class="large-4 columns">
               <a class="th" href="#">
+                <h6>Photos</h6>
+              </a>
+              <a class="th" href="#">
                 <img src="http://placehold.it/300x100">
-                <div class="orbit-caption">Trying to overlay this inside the img</div>
-              </a> 
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <h6>More...</h6>
+              </a>
             </div>
             <div class="large-4 columns">
-
+              <a class="th" href="#">
+                <h6>Videos</h6>
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <img src="http://placehold.it/300x100">
+              </a>
+              <a class="th" href="#">
+                <h6>More...</h6>
+              </a>
             </div>
           </div>
         </div>
@@ -166,10 +190,10 @@
       </div>
       <div class="large-6 columns">
         <ul class="inline-list right">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -198,6 +222,16 @@ document.write('<script src=' +
 <script>
 $(document).foundation();
 </script>
+
+<!-- autocomplete goodness -->
+  <script>
+  $(document).ready(function() {
+    $("input#autocomplete").autocomplete({
+      // searchable item list
+      source: ["Athens, Georgia", "Athens, Greece", "Coquitlam, British Columbia", "Surrey, British Columbia", "Burnaby, British Columbia", "Richmond, British Columbia", "Athens, Ontario"]
+      });
+    });
+  </script>
 
 </body>
 </html>
