@@ -2,9 +2,10 @@ $(function(){ //DOM Ready
 
     $(".gridster ul").gridster({
         widget_margins: [5, 5],
-        widget_base_dimensions: [100, 100],
+        widget_base_dimensions: [297, 280],
         draggable: {
-            handle: '.handle'
+            //handle: '.handle'
+            li: 'li'
         }
     });
     

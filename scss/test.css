@@ -4113,67 +4113,69 @@ height: 300px;*/
   font-size: 35px;
   color: #0caee3; }
 
-/* SHAPESHIFTER DEMO STYLES */
-.credits {
-  background: #DEDEDE;
-  font-size: 13px;
-  padding: 20px 0 13px 0;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: 0;
-  text-align: center; }
+input {
+  width: 100px; }
 
-.credits img {
-  height: 75px;
-  width: 84px;
-  padding: 4px; }
+.handle {
+  border-bottom: 1px solid black;
+  background-color: yellow; }
 
-.container {
-  outline: 1px dashed #CCC;
-  float: left;
-  margin: 0 0 0 2%;
+.gridster {
   position: relative;
-  width: 1100px; }
+  background-color: white; }
 
-.container .object {
-  border: 1px solid #777;
-  border-radius: 3px;
-  box-shadow: 0px 0px 4px 1px #ccc;
+li {
+  background-color: white;
+  width: 150px;
+  height: 300px;
+  border: solid 2px black; }
+
+.gridster > * {
+  margin: 0 auto;
+  -webkit-transition: height .4s;
+  -moz-transition: height .4s;
+  -o-transition: height .4s;
+  -ms-transition: height .4s;
+  transition: height .4s; }
+
+.gridster .gs_w {
+  z-index: 2;
   position: absolute; }
 
-.container .object .currentWeather {
-  width: 1000px;
-  height: 280px; }
+.ready .gs_w:not(.preview-holder) {
+  -webkit-transition: opacity .3s, left .3s, top .3s;
+  -moz-transition: opacity .3s, left .3s, top .3s;
+  -o-transition: opacity .3s, left .3s, top .3s;
+  transition: opacity .3s, left .3s, top .3s; }
 
-.container .whatToWear {
-  width: 250px;
-  height: 250px;
-  background-color: #3380A8; }
+.ready .gs_w:not(.preview-holder) {
+  -webkit-transition: opacity .3s, left .3s, top .3s, width .3s, height .3s;
+  -moz-transition: opacity .3s, left .3s, top .3s, width .3s, height .3s;
+  -o-transition: opacity .3s, left .3s, top .3s, width .3s, height .3s;
+  transition: opacity .3s, left .3s, top .3s, width .3s, height .3s; }
 
-.container .object .sevenDayForecast {
-  width: 890px;
-  height: 201px; }
+.gridster .preview-holder {
+  z-index: 1;
+  position: absolute;
+  background-color: #fff;
+  border-color: #fff;
+  opacity: 0.3; }
 
-.container .object .sevenDayForecast {
-  width: 890px;
-  height: 201px; }
+.gridster .player-revert {
+  z-index: 10 !important;
+  -webkit-transition: left 0.3s, top 0.3s !important;
+  -moz-transition: left 0.3s, top 0.3s !important;
+  -o-transition: left 0.3s, top 0.3s !important;
+  transition: left 0.3s, top 0.3s !important; }
 
-.container .object .placeholder {
-  width: 170px;
-  height: 170px; }
+.gridster .dragging {
+  z-index: 10 !important;
+  -webkit-transition: all 0s !important;
+  -moz-transition: all 0s !important;
+  -o-transition: all 0s !important;
+  transition: all 0s !important; }
 
-.container .object.ss-moving {
-  cursor: move;
-  z-index: 9999;
-  opacity: .3;
-            /*
-transform:rotate(0deg);
--ms-transform:rotate(0deg);  IE 9 
--moz-transform:rotate(0deg);  Firefox 
--webkit-transform:rotate(0deg);  Safari and Chrome 
--o-transform:rotate(0deg);  Opera 
-*/ }
-
-.container .object img {
-  border-radius: 2px 2px 0 0; }
+/* Uncomment this if you set helper : "clone" in draggable options */
+/*.gridster .player {
+  opacity:0;
+}*/
