@@ -21,30 +21,77 @@
 
   <script type="text/javascript" src="gridster_config.js"></script>
 
+  <!-- foundation -->
+  <link rel="stylesheet" href="../foundation_icons_all/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css" />
+  <script src="../foundation-master/js/vendor/custom.modernizr.js"></script>
+
 </head>
 
 <body>
 
+<!-- jQuery autocomplete searchbar-->
+<input id="tags" />
+
+
   <div class="gridster">
       <ul id="resizable">
-        
+
           <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-            <div class="handle">
-              1
-            </div>
-            <br>
-            <a href="http://www.google.com">
-              links work
-            </a>
+            <img src="../images/current-weather.png">
           </li>
 
-          <li data-row="1" data-col="2" data-sizex="1" data-sizey="1"><div class="handle">2</div><input></li></li>
-          <li data-row="2" data-col="1" data-sizex="3" data-sizey="1"><div class="handle">3</div></li>
-          <li data-row="3" data-col="1" data-sizex="3" data-sizey="1"><div class="handle">4</div><br>I can't select this text!</li>
+          <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+            <img src="../images/what-to-wear.png">
+          </li>
+
+          <li data-row="2" data-col="1" data-sizex="3" data-sizey="1">
+            <img src="../images/7-day-forecast.png">
+          </li>
+
+          <li data-row="3" data-col="1" data-sizex="3" data-sizey="1">
+            <img src="../images/news.png">
+          </li>
+
       </ul>
   </div>
 
+  <!-- Foundation scripts -->
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? '../foundation-master/js/vendor/zepto' : '../foundation-master/js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="../foundation-master/js/foundation/foundation.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.alerts.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.clearing.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.cookie.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.dropdown.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.forms.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.joyride.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.magellan.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.orbit.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.placeholder.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.reveal.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.section.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.tooltips.js"></script>
+  <script src="../foundation-master/js/foundation/foundation.topbar.js"></script>
+  <script>
+  $(document).foundation();
+  </script>
+  <!-- Foundation scripts end -->
 
+  <!-- autocomplete script -->
+  <script>
+    $(function() {
+      var availableTags = [
+        "UBC, Vancouver, BC", "University of British Columbia, Vancouver, BC", "Athens, Georgia", "Athens, Greece", "Coquitlam, British Columbia", "Surrey, British Columbia", "Simon Fraser University, Burnaby, BC", "Burnaby, British Columbia", "Richmond, British Columbia", "Athens, Ontario"
+      ];
+      $( "#tags" ).autocomplete({
+        source: availableTags
+      });
+    });
+  </script>
+  <!-- autocomplete script end -->
 
 </body>
 </html>

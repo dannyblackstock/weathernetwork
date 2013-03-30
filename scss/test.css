@@ -4113,8 +4113,11 @@ height: 300px;*/
   font-size: 35px;
   color: #0caee3; }
 
+.ui-menu-item {
+  max-height: 40px; }
+
 input {
-  width: 100px; }
+  width: 200px; }
 
 .handle {
   border-bottom: 1px solid black;
@@ -4122,13 +4125,14 @@ input {
 
 .gridster {
   position: relative;
-  background-color: white; }
+  background-color: white;
+  z-index: -5; }
 
 li {
   background-color: white;
   width: 150px;
   height: 300px;
-  border: solid 2px black; }
+  list-style-type: none; }
 
 .gridster > * {
   margin: 0 auto;
