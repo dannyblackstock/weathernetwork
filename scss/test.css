@@ -4113,8 +4113,10 @@ height: 300px;*/
   font-size: 35px;
   color: #0caee3; }
 
-input {
-  width: 200px; }
+.ui-autocomplete {
+  position: absolute;
+  cursor: default;
+  z-index: 30 !important; }
 
 .handle {
   border-bottom: 1px solid black;
@@ -4122,11 +4124,11 @@ input {
 
 .gridster {
   position: relative;
-  background-color: white; }
-
-li {
   background-color: white;
-  list-style-type: none; }
+  margin-left: 100px; }
+  .gridster li {
+    background-color: white;
+    list-style-type: none; }
 
 .gridster > * {
   margin: 0 auto;

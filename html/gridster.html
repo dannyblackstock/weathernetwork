@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Gridster Test</title>
+  <title>Weather Network Prototype A</title>
 
   <link rel="stylesheet" href="../scss/test.css" />
   <link rel="stylesheet" href="../scss/gridster_site.css" />
@@ -28,10 +28,17 @@
 </head>
 
 <body>
+  
+<!-- sidebar -->
+<div id="floatingSidebar" data-magellan-expedition="fixed">
+      <ul class="side-nav">
+        <li data-magellan-arrival="orbit"><a href="#orbit">Orbit!</a></li>
+        <li data-magellan-arrival="longcat"><a href="#longcat">LONGCAT</a></li>
+      </ul>
+</div>
 
 <!-- jQuery autocomplete searchbar-->
-<input id="tags" />
-
+  <input id="tags" />
 
   <div class="gridster">
       <ul id="resizable">
@@ -54,7 +61,6 @@
 
       </ul>
   </div>
-
   <!-- Foundation scripts -->
   <script>
   document.write('<script src=' +
