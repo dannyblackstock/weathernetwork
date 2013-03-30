@@ -4176,8 +4176,8 @@ input {
   z-index: 1;
   position: absolute;
   background-color: #fff;
-  border-color: #fff;
-  opacity: 0.3; }
+  border-style: dashed;
+  border-color: #ddd; }
 
 .gridster .player-revert {
   z-index: 10 !important;
