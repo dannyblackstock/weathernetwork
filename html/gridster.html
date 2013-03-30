@@ -28,12 +28,12 @@
 </head>
 
 <body>
-  
-<!-- sidebar -->
+
+<!-- Sidebar -->
 <div id="floatingSidebar" data-magellan-expedition="fixed">
       <ul class="side-nav">
-        <li data-magellan-arrival="orbit"><a href="#orbit">Orbit!</a></li>
-        <li data-magellan-arrival="longcat"><a href="#longcat">LONGCAT</a></li>
+        <li data-magellan-arrival="orbit"><a href="#currentWeather"><img src="../images/weather.png"></a></li>
+        <li data-magellan-arrival="news"><a href="#news"><img src="../images/media.png"></a></li>
       </ul>
 </div>
 
@@ -44,7 +44,9 @@
       <ul id="resizable">
 
           <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-            <img src="../images/current-weather.png">
+            <div id="currentWeather" data-magellan-destination="currentWeather">
+              <img src="../images/current-weather.png">
+            </div>
           </li>
 
           <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
@@ -56,12 +58,15 @@
           </li>
 
           <li data-row="3" data-col="1" data-sizex="3" data-sizey="1">
-            <img src="../images/news.png">
+            <div id="news" data-magellan-destination="news">
+              <img src="../images/news.png">
+            </div>
           </li>
 
       </ul>
   </div>
-  <!-- Foundation scripts -->
+
+  <!-- START Foundation scripts -->
   <script>
   document.write('<script src=' +
   ('__proto__' in {} ? '../foundation-master/js/vendor/zepto' : '../foundation-master/js/vendor/jquery') +
@@ -84,9 +89,9 @@
   <script>
   $(document).foundation();
   </script>
-  <!-- Foundation scripts end -->
+  <!-- END Foundation scripts -->
 
-  <!-- autocomplete script -->
+  <!-- START jQuery Autocomplete script -->
   <script>
     $(function() {
       var availableTags = [
@@ -97,7 +102,28 @@
       });
     });
   </script>
-  <!-- autocomplete script end -->
+  <!-- END jQuery Autocomplete script -->
+
+  <!-- Magellan easing effect -->
+  <script>
+    $(document).ready(function(){
+      $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+          var $target = $(this.hash);
+          $target = $target.length && $target
+          || $('[name=' + this.hash.slice(1) +']');
+          if ($target.length) {
+            var targetOffset = $target.offset().top;
+            $('html,body')
+            .animate({scrollTop: targetOffset}, 1000);
+           return false;
+          }
+        }
+      });
+    });
+  </script>
+  <!-- Magellan easing effect end -->
 
 </body>
 </html>
