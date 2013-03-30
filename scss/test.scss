@@ -21,16 +21,11 @@
     color: #0caee3;
  }
 
-//fix for huge autocomplete search results
-.ui-menu-item { 
-    max-height: 40px;
-}
 
 ///////////////// GRIDSTER STYLES /////////////////
 input {
     width: 200px;
 }
-
 
 .handle {
     border-bottom: 1px solid black;
@@ -39,13 +34,12 @@ input {
 .gridster {
     position:relative;
     background-color: white;
-    z-index: -5; //push back
 } 
 
 li {
     background-color: white;
-    width: 150px;
-    height: 300px;
+    //width: 150px;
+    //height: 300px;
     //border: solid 2px black;
     list-style-type: none; //remove bullet points
 }

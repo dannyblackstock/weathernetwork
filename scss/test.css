@@ -4113,9 +4113,6 @@ height: 300px;*/
   font-size: 35px;
   color: #0caee3; }
 
-.ui-menu-item {
-  max-height: 40px; }
-
 input {
   width: 200px; }
 
@@ -4125,13 +4122,10 @@ input {
 
 .gridster {
   position: relative;
-  background-color: white;
-  z-index: -5; }
+  background-color: white; }
 
 li {
   background-color: white;
-  width: 150px;
-  height: 300px;
   list-style-type: none; }
 
 .gridster > * {
