@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Gridster Test</title>
+
+  <link rel="stylesheet" href="../scss/test.css" />
+  <link rel="stylesheet" href="../scss/gridster_site.css" />
+
+  <!--jQuery-->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
+
+  <!-- gridster -->
+  <script src="https://raw.github.com/ducksboard/gridster.js/master/dist/jquery.gridster.js"></script>
+
+  <script type="text/javascript" src="gridster_config.js"></script>
+
+</head>
+
+<body>
+
+  <div class="gridster">
+      <ul id="reszable">
+          <li data-row="1" data-col="1" data-sizex="1" data-sizey="1"><div class="handle">1</div></li>
+          <li data-row="2" data-col="1" data-sizex="1" data-sizey="1"><div class="handle">2</div></li>
+          <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"><div class="handle">3</div></li>
+          <li data-row="1" data-col="2" data-sizex="2" data-sizey="1"><div class="handle">4</div><br>I can't select this text!</li>
+          <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"><div class="handle">5</div> <input></li>
+          <li data-row="1" data-col="4" data-sizex="1" data-sizey="1"><div class="handle">6</div></li>
+          <li data-row="2" data-col="4" data-sizex="2" data-sizey="1"><div class="handle">7</div><br><a href="http://www.google.com">links work</a></li>
+          <li data-row="3" data-col="4" data-sizex="1" data-sizey="1"><div class="handle">8</div></li>
+          <li data-row="1" data-col="5" data-sizex="1" data-sizey="1"><div class="handle">9</div></li>
+          <li data-row="3" data-col="5" data-sizex="1" data-sizey="1"><div class="handle">10</div></li>
+          <li data-row="1" data-col="6" data-sizex="1" data-sizey="1"><div class="handle">11</div></li>
+          <li data-row="2" data-col="6" data-sizex="1" data-sizey="2"><div class="handle">12</div></li>
+      </ul>
+  </div>
+
+
+
+</body>
+</html>
