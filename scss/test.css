@@ -4113,12 +4113,17 @@ height: 300px;*/
   float: left;
   margin: 10px 0 0 105px; }
 
+.cityTitle {
+  float: left;
+  font-size: 35px;
+  margin: 25px; }
+
 #search {
-  margin: 15px 0 0 230px;
+  margin: 15px 0 0 75px;
   float: left; }
 
 input {
-  width: 599px;
+  width: 535px;
   height: 60px; }
 
 #locationButton {
