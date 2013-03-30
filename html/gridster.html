@@ -29,17 +29,57 @@
 
 <body>
 
+  <div id="logo">
+    <img src="../images/logo.png">
+  </div>
+
+  <!-- jQuery autocomplete searchbar-->
+  <div id="search" data-magellan-destination="search">
+
+    <input id="tags" 
+    value="search" 
+    onfocus="if (this.value==this.defaultValue) this.value='';" 
+    style="color: #555;"/>
+
+  </div>
+
 <!-- Sidebar -->
-<div id="floatingSidebar" data-magellan-expedition="fixed">
-      <ul class="side-nav">
-        <li data-magellan-arrival="orbit"><a href="#currentWeather"><img src="../images/weather.png"></a></li>
-        <li data-magellan-arrival="news"><a href="#news"><img src="../images/media.png"></a></li>
-      </ul>
-</div>
+  <div id="floatingSidebar" data-magellan-expedition="fixed">
+        <ul class="side-nav">
 
-<!-- jQuery autocomplete searchbar-->
-  <input id="tags" />
+          <li data-magellan-arrival="search">
 
+            <!-- <a href="#search">
+            
+            The next line focuses on the searchbar right away. Glitches the easing. Depends how much we care about looking glitchy.-->
+            <a href="#search" onclick="document.getElementById('tags').focus();">
+            
+              <img src="../images/search.png">
+            </a>
+          </li>
+
+          <li data-magellan-arrival="currentWeather">
+            <a href="#currentWeather">
+              <img src="../images/weather.png">
+            </a>
+          </li>
+
+          <li data-magellan-arrival="news">
+            <a href="#news">
+              <img src="../images/media.png">
+            </a>
+          </li>
+
+          <li data-magellan-arrival="maps">
+            <a href="#news">
+              <img src="../images/maps.png">
+            </a>
+          </li>
+
+        </ul>
+  </div>
+
+<!-- Gridster -->
   <div class="gridster">
       <ul id="resizable">
 
@@ -104,7 +144,7 @@
   </script>
   <!-- END jQuery Autocomplete script -->
 
-  <!-- Magellan easing effect -->
+  <!-- easing effect for Magellan-->
   <script>
     $(document).ready(function(){
       $('a[href*=#]').click(function() {
@@ -116,12 +156,15 @@
           if ($target.length) {
             var targetOffset = $target.offset().top;
             $('html,body')
-            .animate({scrollTop: targetOffset}, 1000);
+            .animate({scrollTop: targetOffset}, 500);
            return false;
           }
         }
       });
+
     });
+
+
   </script>
   <!-- Magellan easing effect end -->
 

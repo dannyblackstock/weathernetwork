@@ -4109,6 +4109,18 @@ height: 300px;*/
   border: solid 1px #ccc;
   background-color: #EEE; }
 
+#logo {
+  float: left;
+  margin: 10px 0 0 105px; }
+
+#search {
+  margin: 15px 0 0 230px;
+  float: left; }
+
+input {
+  width: 599px;
+  height: 60px; }
+
 #locationButton {
   font-size: 35px;
   color: #0caee3; }
@@ -4125,7 +4137,8 @@ height: 300px;*/
 .gridster {
   position: relative;
   background-color: white;
-  margin-left: 100px; }
+  margin-left: 100px;
+  clear: both; }
   .gridster li {
     background-color: white;
     list-style-type: none; }

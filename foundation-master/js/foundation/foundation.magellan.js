@@ -79,7 +79,7 @@
             if ($expedition.data("magellan-fixed-position") != fixed_position) {
               $expedition.data("magellan-fixed-position", fixed_position);
               if (fixed_position) {
-                $expedition.css({position:"fixed", top:200}); //I FOUND THE MAGIC NUMBER!
+                $expedition.css({position:"fixed", top:88}); //I FOUND THE MAGIC NUMBER!
               } else {
                 $expedition.css({position:"", top:200}); //mac scrolling fix
               }
