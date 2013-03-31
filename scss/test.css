@@ -4123,8 +4123,21 @@ height: 300px;*/
   float: left; }
 
 input {
-  width: 535px;
+  width: 485px;
   height: 60px; }
+
+#addButton {
+  font-size: 40px;
+  color: #555;
+  float: left;
+  margin: 25px 0 0 10px;
+  transition: color 0.15s;
+  -moz-transition: color 0.15s;
+  -webkit-transition: color 0.15s;
+  -o-transition: color 0.15s; }
+
+#addButton:hover {
+  color: #0caee3; }
 
 #locationButton {
   font-size: 35px;

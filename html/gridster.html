@@ -35,17 +35,31 @@
   </div>
 
   <!-- Vancouver title -->
-  <div class="cityTitle">
+  <div class="cityTitle" data-dropdown="cityDropdown">
     Vancouver
   </div>
+
+  <! -- Favourite locations dropdown content -->
+  <ul id="cityDropdown" class="f-dropdown" data-dropdown-content>
+    <li><a href="#">This is a link</a></li>
+    <li><a href="#">This is another</a></li>
+    <li><a href="#">Yet another</a></li>
+  </ul>
+
   <!-- jQuery autocomplete searchbar-->
   <div id="search" data-magellan-destination="search">
 
+    <!-- search field -->
     <input id="tags" 
     value="      search" 
     onfocus="if (this.value==this.defaultValue) this.value='';" 
     style="color: #555;"/>
 
+  </div>
+
+  <!-- button to add location -->
+  <div id="addButton">
+    <i class="foundicon-plus"></i>
   </div>
 
 <!-- Sidebar -->
