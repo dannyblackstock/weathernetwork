@@ -23,12 +23,11 @@
 
 .cityTitle {
   float: left;
-  font-size: 35px;
-  margin: 25px;
+  font-size: 25px;
+  margin: 13px 0 0 25px;
+  //color: #006092;
 }
-.f-dropdown {
-  $f-dropdown-triangle-side-offset: 100px;
-}
+
 #search {
   margin: 15px 0 0 75px;
   float:left;
@@ -36,7 +35,7 @@
 
 input {
   //width:535px;
-  width: 485px;
+  width: 380px;
   height:60px;
 }
 
@@ -46,19 +45,19 @@ input {
   float:left;
   margin: 25px 0 0 10px;
 
-  transition: color 0.15s;
-  -moz-transition: color 0.15s;
-  -webkit-transition: color 0.15s;
-  -o-transition: color 0.15s;
+  transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
 }
 
 #addButton:hover{
-  color: #0caee3;
+  color: #006092;
  }
 
 #locationButton{
   font-size: 35px;
-  color: #0caee3;
+  color: #006092;
 }
 
 //put that sunofagun on top

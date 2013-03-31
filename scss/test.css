@@ -3713,7 +3713,7 @@ table {
     border-color: transparent transparent white transparent;
     position: absolute;
     top: -12px;
-    left: 10px;
+    left: 90px;
     z-index: 99; }
   .f-dropdown:after {
     content: "";
@@ -3724,7 +3724,7 @@ table {
     border-color: transparent transparent #cccccc transparent;
     position: absolute;
     top: -14px;
-    left: 9px;
+    left: 89px;
     z-index: 98; }
   .f-dropdown li {
     font-size: 0.875em;
@@ -4115,15 +4115,15 @@ height: 300px;*/
 
 .cityTitle {
   float: left;
-  font-size: 35px;
-  margin: 25px; }
+  font-size: 25px;
+  margin: 13px 0 0 25px; }
 
 #search {
   margin: 15px 0 0 75px;
   float: left; }
 
 input {
-  width: 485px;
+  width: 380px;
   height: 60px; }
 
 #addButton {
@@ -4131,17 +4131,17 @@ input {
   color: #555;
   float: left;
   margin: 25px 0 0 10px;
-  transition: color 0.15s;
-  -moz-transition: color 0.15s;
-  -webkit-transition: color 0.15s;
-  -o-transition: color 0.15s; }
+  transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s; }
 
 #addButton:hover {
-  color: #0caee3; }
+  color: #006092; }
 
 #locationButton {
   font-size: 35px;
-  color: #0caee3; }
+  color: #006092; }
 
 .ui-autocomplete {
   position: absolute;
