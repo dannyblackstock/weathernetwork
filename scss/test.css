@@ -3559,7 +3559,6 @@ kbd {
 [data-magellan-expedition] {
   z-index: 997;
   min-width: 30px;
-  padding: 10px;
   position: fixed; }
   [data-magellan-expedition] .sub-nav {
     margin-bottom: 0; }
@@ -4104,19 +4103,18 @@ table {
 position:fixed;
 top:50px;
 left:0;
-width:100px;
-height: 300px;*/
+width:100px;*/
+  height: 100%;
   border: solid 1px #ccc;
-  background-color: #EEE; }
+  background-color: #AAA; }
 
-#logo {
-  float: left;
-  margin: 10px 0 0 105px; }
+.side-nav {
+  padding: 0px; }
 
 .cityTitle {
   float: left;
   font-size: 25px;
-  margin: 13px 0 0 25px; }
+  margin: 13px 0 0 150px; }
 
 #search {
   margin: 15px 0 0 75px;
@@ -4155,7 +4153,7 @@ input {
 .gridster {
   position: relative;
   background-color: white;
-  margin-left: 100px;
+  margin-left: 110px;
   clear: both; }
   .gridster li {
     background-color: white;

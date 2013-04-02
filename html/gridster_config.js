@@ -2,7 +2,7 @@ $(function(){ //DOM Ready
 
     $(".gridster ul").gridster({
         widget_margins: [5, 5],
-        widget_base_dimensions: [293, 281],
+        widget_base_dimensions: [280, 275],
         draggable: {
             //handle: '.handle'
             li: 'li'
