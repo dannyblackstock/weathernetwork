@@ -39,7 +39,7 @@
     <a href="#" class="button dropdown radius secondary" data-dropdown="cityDropdown">Vancouver, BC</a>
   </div>
 
-  <! -- Favourite locations dropdown content -->
+  <!-- Favourite locations dropdown content -->
   <ul id="cityDropdown" class="f-dropdown" data-dropdown-content>
     <li><a href="#">This is a link</a></li>
     <li><a href="#">This is another</a></li>
@@ -48,19 +48,16 @@
 
   <!-- jQuery autocomplete searchbar-->
   <div id="search" data-magellan-destination="search">
-
     <!-- search field -->
-    <input id="tags" 
-    value="      search" 
-    onfocus="if (this.value==this.defaultValue) this.value='';" 
-    style="color: #555;"/>
-
+    <input id="tags" name="search" value="      search" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555;"/>
   </div>
 
   <!-- button to add location -->
   <div id="addButton">
-    <i class="foundicon-plus"></i>
+    <i class="foundicon-plus" ></i>
   </div>
+    <!--<input type="button" name="add" value="add" id="addButton">-->
+
 
 <!-- Sidebar -->
   <div id="floatingSidebar" data-magellan-expedition="fixed">
@@ -163,8 +160,8 @@
   </script>
   <!-- END jQuery Autocomplete script -->
 
-  <!-- easing effect for Magellan-->
   <script>
+    //START Magellan easing effect
     $(document).ready(function(){
       $('a[href*=#]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -180,12 +177,16 @@
           }
         }
       });
+      //END Magellan easing effect -->
 
-    });
-
-
+      //START adding cities to dropdown script
+      $('#addButton').click(function(){
+          $('#cityDropdown').append('<li><a>'+$('#tags').val()+'</a></li>');
+        });
+      });
+      //END adding cities to dropdown script -->
   </script>
-  <!-- Magellan easing effect end -->
+  
 
 </body>
 </html>
