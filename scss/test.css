@@ -3712,7 +3712,7 @@ table {
     border-color: transparent transparent white transparent;
     position: absolute;
     top: -12px;
-    left: 90px;
+    left: 152px;
     z-index: 99; }
   .f-dropdown:after {
     content: "";
@@ -3723,7 +3723,7 @@ table {
     border-color: transparent transparent #cccccc transparent;
     position: absolute;
     top: -14px;
-    left: 89px;
+    left: 151px;
     z-index: 98; }
   .f-dropdown li {
     font-size: 0.875em;
@@ -4094,9 +4094,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.greyBox {
-  border: solid 1px #ccc;
-  background-color: #EEE; }
+.floatLeft {
+  float: left; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #016091;
+  float: right;
+  margin: 5px 0 0 10px; }
+
+#mainTitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #016091;
+  margin: 13px 0 0 140px;
+  float: left; }
 
 #floatingSidebar {
              /*
@@ -4108,17 +4123,39 @@ width:100px;*/
   border: solid 1px #ccc;
   background-color: #AAA; }
 
+.sidebarLine {
+  height: 1px;
+  width: 100px;
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 85%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, rgba(255, 255, 255, 0)), color-stop(15%, rgba(255, 255, 255, 0)), color-stop(25%, rgba(255, 255, 255, 0.8)), color-stop(50%, rgba(255, 255, 255, 0.8)), color-stop(75%, rgba(255, 255, 255, 0.8)), color-stop(85%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 85%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 85%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 85%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0) 85%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
+  /* IE6-9 */ }
+
 .side-nav {
   padding: 0px; }
 
 .cityTitle {
   float: left;
-  font-size: 25px;
-  margin: 13px 0 0 150px; }
+  font-size: 18px;
+  font-weight: 200;
+  clear: both;
+  margin: -25px 0 30px 140px;
+  width: auto; }
 
 #search {
-  margin: 15px 0 0 75px;
-  float: left; }
+  margin: 15px 0 0 40px;
+  float: left;
+  width: 430px; }
 
 input {
   width: 380px;
@@ -4127,8 +4164,8 @@ input {
 #addButton {
   font-size: 40px;
   color: #555;
-  float: left;
-  margin: 25px 0 0 10px;
+  float: right;
+  margin: 10px 0 0 0;
   transition: color 0.2s;
   -moz-transition: color 0.2s;
   -webkit-transition: color 0.2s;
