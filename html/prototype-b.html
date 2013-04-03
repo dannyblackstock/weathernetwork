@@ -25,41 +25,54 @@
 <!-- LOGO AND SEARCH -->
 <div class="row">
   <div class="small-2 columns">
-    <img src="http://placehold.it/166">
+    <img src="http://placehold.it/166&text=TWN">
   </div>
-  <div class="small-1 columns">
-    <label for="right-label" class="right">icon</label>
-  </div>
-  <div class="small-9 columns">
-    <input id="autocomplete" type="text" placeholder="Search">
-  </div>
-</div>
-
-<!-- CITY INDICATOR -->
-<div class="row">
-  <div class="large-12 columns">
-    <h2>Vancouver</h2>
+  <div class="small-10 columns">
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>
+          <input id="autocomplete mainTitle" type="text" placeholder="Search The Weather Network">
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <ul class="small-block-grid-6">
+          <li><a href="#"><div class="cityTitle">VANCOUVER</div></a></li>
+          <li><a href="#"><div class="cityTitle">BURNABY</div></a></li>
+          <li><a href="#"><div class="cityTitle">SURREY</div></a></li>
+          <li><a href="#"><div class="cityTitle">WHISTLER</div></a></li>
+          <li><a href="#"><div class="cityTitle">CALGARY</div></a></li>
+          <li><a href="#"><h6><i class="foundicon-plus"></i> <small>add a location</small></h6></a></li>
+        </ul>
+      </div>
+      <div class="small-1 columns">
+        <div id="addButton">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- MAIN AREA -->       <!-- BEWARE: The images on the tabs are nonresponsive. And IDK why it messes up half the time lol -->
 <div class="row">
-  <div class="large-12 columns">
+  <div class="small-12 columns">
     <div class="section-container tabs" data-section="tabs">
       <!-- Weather -->
       <section class="section">
         <p class="title button"><a href="#weather"> <img src="http://placehold.it/248x60&text=Forecast" /> </a></p>
         <div class="content">
           <div class="row">
-            <div class="large-8 columns">
+            <div class="small-8 columns">
               <div class="row">
-                <div class="large-4 columns">
+                <div class="small-4 columns">
                   <img src="http://placehold.it/175">
                 </div>
-                <div class="large-4 columns">
+                <div class="small-4 columns">
                   <h3 class="temperature">7&deg;</h3>
                 </div>
-                <div class="large-4 columns">
+                <div class="small-4 columns">
                   <dl>
                     <dt>Feels Like:</dt><dd>7&deg;</dd>
                     <dt>Wind:</dt><dd>N 5km/h</dd>
@@ -69,22 +82,22 @@
                 </div>
               </div>
               <div class="row">
-                <div class="large-12 columns">
+                <div class="small-12 columns">
                   <h4>Herr Forecast</h4><hr>
                   <div class="row">
-                    <div class="large-3 columns">
+                    <div class="small-3 columns">
                       <p><img src="http://placehold.it/100"></p>
                       7&deg;
                     </div>
-                    <div class="large-3 columns">
+                    <div class="small-3 columns">
                       <p><img src="http://placehold.it/100"></p>
                       7&deg;
                     </div>
-                    <div class="large-3 columns">
+                    <div class="small-3 columns">
                       <p><img src="http://placehold.it/100"></p>
                       7&deg;
                     </div>
-                    <div class="large-3 columns">
+                    <div class="small-3 columns">
                       <p><img src="http://placehold.it/100"></p>
                       7&deg;
                     </div>
@@ -92,7 +105,7 @@
                 </div>
               </div>
             </div>
-            <div class="large-4 columns"> 
+            <div class="small-4 columns"> 
               <h4>Whart to where</h4><hr>
               <img src="http://placehold.it/300x400">
             </div>
@@ -113,7 +126,7 @@
         <p class="title button"><a href="#newsmedia"> <img src="http://placehold.it/248x60&text=News+and+Media" /> </a></p>
         <div class="content">
           <div class="row">
-            <div class="large-4 columns">
+            <div class="small-4 columns">
               <a class="th" href="#">
                 <h6>News</h6>
               </a>
@@ -133,7 +146,7 @@
                 <h6>More...</h6>
               </a>
             </div>
-            <div class="large-4 columns">
+            <div class="small-4 columns">
               <a class="th" href="#">
                 <h6>Photos</h6>
               </a>
@@ -153,7 +166,7 @@
                 <h6>More...</h6>
               </a>
             </div>
-            <div class="large-4 columns">
+            <div class="small-4 columns">
               <a class="th" href="#">
                 <h6>Videos</h6>
               </a>
