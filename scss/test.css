@@ -4192,13 +4192,18 @@ input {
   width: 2000px;
   height: 2000px; }
 
-#message {
-  width: 2000px;
-  height: 2000px; }
+#vancouver {
+  width: 1000px;
+  height: 1000px; }
+
+#athens {
+  width: 1000px;
+  height: 1000px; }
 
 .tabs {
   float: left;
-  border: solid 1px; }
+  border: solid 1px;
+  margin-left: 110px; }
   .tabs li {
     display: inline;
     background-color: white;
@@ -4212,7 +4217,6 @@ input {
 .gridster {
   position: relative;
   background-color: white;
-  margin-left: 110px;
   clear: both; }
   .gridster li {
     display: list-item;
