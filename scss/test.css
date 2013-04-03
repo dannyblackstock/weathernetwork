@@ -4210,6 +4210,10 @@ input {
     background-color: white;
     list-style-type: none;
     padding: 0 20px 0 0; }
+  .tabs a {
+    color: #96C5D6; }
+  .tabs a.selected {
+    color: #005370; }
 
 .handle {
   border-bottom: 1px solid black;
