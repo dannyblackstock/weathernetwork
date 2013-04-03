@@ -110,7 +110,25 @@ input {
 }
 .widen {
   width:2000px;
-  height:2000px;
+  height: 2000px;
+}
+
+#message{
+    width:2000px;
+  height: 2000px;
+}
+.tabs {
+  float:left;
+  border: solid 1px;
+  li {
+    display: inline;
+    background-color: white;
+    list-style-type: none; //remove bullet points
+    border: solid 1px;
+    //width: 150px;
+    //height: 300px;
+    //border: solid 2px black;
+  }
 }
 ///////////////// GRIDSTER STYLES /////////////////
 
@@ -125,6 +143,8 @@ input {
       margin-left: 110px;
       clear:both;
       li {
+        display: list-item;
+        border: none;
         background-color: white;
         list-style-type: none; //remove bullet points
         //width: 150px;

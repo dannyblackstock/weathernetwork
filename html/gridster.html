@@ -110,14 +110,18 @@
         </ul>
   </div>
 
-  <div class="tabsTest">
-    <div class="section-container tabs contentTest" data-section>
-      <section class="section">
-        <p class="title"><a href="#panel1">Vancouver, BC</a></p>
-        <div class="content widen">
-          <p>Gridster for Vancouver, BC:</p>
-          <div>
-    <div class="gridster">
+
+<div class="tabs">
+  <!-- tabs -->
+  <ul class="tabNavigation">
+    <li><a href="#message">Send a message</a></li>
+    <li><a href="#shareFile">Share a file</a></li>
+    <li><a href="#arrange">Arrange a meetup</a></li>
+  </ul>
+
+  <!-- tab containers -->
+  <div id="message">
+        <div class="gridster">
         <ul id="resizable">
 
             <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
@@ -141,44 +145,15 @@
             </li>
 
         </ul>
-    </div>
-  </div> 
-        </div>
-      </section>
-      <section class="section">
-        <p class="title"><a href="#panel2">Section 2</a></p>
-        <div class="content widen">
-          <p>Gridster for Richmond, BC:</p>
-
-              <div class="gridster">
-        <ul id="resizable">
-
-            <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-              <div id="currentWeather" data-magellan-destination="currentWeather">
-                <img src="../images/current-weather.png">
-              </div>
-            </li>
-
-            <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
-              <img src="../images/what-to-wear.png">
-            </li>
-
-            <li data-row="2" data-col="1" data-sizex="3" data-sizey="1">
-              <img src="../images/7-day-forecast.png">
-            </li>
-
-            <li data-row="3" data-col="1" data-sizex="3" data-sizey="1">
-              <div id="news" data-magellan-destination="news">
-                <img src="../images/news.png">
-              </div>
-            </li>
-
-        </ul>
-    </div>
-        </div>
-      </section>
     </div>
   </div>
+  <div id="shareFile">
+    <p>Sed do eiusmod tempor incididunt.</p>
+  </div>
+  <div id="arrange">
+    <p>Ut enim ad minim veniam</p>
+  </div>
+</div>
   <!-- Gridster
   <div>
     <div class="gridster">
@@ -270,6 +245,21 @@
         });
       });
       //END adding cities to dropdown script -->
+      
+
+      $(function () {
+        var tabContainers = $('div.tabs > div');
+    
+        $('div.tabs ul.tabNavigation a').click(function () {
+            tabContainers.hide().filter(this.hash).show();
+            
+            $('div.tabs ul.tabNavigation a').removeClass('selected');
+            $(this).addClass('selected');
+            
+            return false;
+        }).filter(':first').click();
+      });
+      //END tabs script
   </script>
   
 

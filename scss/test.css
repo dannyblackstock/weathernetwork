@@ -4192,6 +4192,19 @@ input {
   width: 2000px;
   height: 2000px; }
 
+#message {
+  width: 2000px;
+  height: 2000px; }
+
+.tabs {
+  float: left;
+  border: solid 1px; }
+  .tabs li {
+    display: inline;
+    background-color: white;
+    list-style-type: none;
+    border: solid 1px; }
+
 .handle {
   border-bottom: 1px solid black;
   background-color: yellow; }
@@ -4202,6 +4215,8 @@ input {
   margin-left: 110px;
   clear: both; }
   .gridster li {
+    display: list-item;
+    border: none;
     background-color: white;
     list-style-type: none; }
 
