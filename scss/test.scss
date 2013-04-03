@@ -115,23 +115,26 @@ input {
 
 #vancouver{
   width:1000px;
-  height: 1000px;
+  height: 1500px;
 }
 
 #athens{
   width:1000px;
-  height: 1000px;
+  height: 1500px;
 }
 
 .tabs {
   float:left;
-  border: solid 1px;
-  margin-left: 110px;
+  //border: solid 1px;
+  margin: -20px 0 0 140px;
+  font-size: 18px;
+  font-weight: 200;
   li {
     display: inline;
     background-color: white;
     list-style-type: none; //remove bullet points
-    border: solid 1px;
+    //border: solid 1px;
+    padding: 0 20px 0 0;
     //width: 150px;
     //height: 300px;
     //border: solid 2px black;
@@ -147,7 +150,7 @@ input {
   .gridster {
       position:relative;
       background-color: white;
-      //margin-left: 110px;
+      //margin-left: 20px;
       clear:both;
       li {
         display: list-item;

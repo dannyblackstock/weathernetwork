@@ -4194,21 +4194,22 @@ input {
 
 #vancouver {
   width: 1000px;
-  height: 1000px; }
+  height: 1500px; }
 
 #athens {
   width: 1000px;
-  height: 1000px; }
+  height: 1500px; }
 
 .tabs {
   float: left;
-  border: solid 1px;
-  margin-left: 110px; }
+  margin: -20px 0 0 140px;
+  font-size: 18px;
+  font-weight: 200; }
   .tabs li {
     display: inline;
     background-color: white;
     list-style-type: none;
-    border: solid 1px; }
+    padding: 0 20px 0 0; }
 
 .handle {
   border-bottom: 1px solid black;
