@@ -146,15 +146,15 @@ input {
   height: 1500px;
 }
 
-#athens{
+#ubc{
   width:1000px;
   height: 1500px;
 }
 
-#athensCover {
+#ubcCover {
   width: 140px;
   height: 30px;
-  background-color: black;
+  background-color: white;
   position: absolute;
   top: 50px;
   left: 280px;
@@ -183,6 +183,12 @@ input {
     color: #005370;
   }
 
+}
+
+.reveal-modal .close-reveal-modal {
+  color: #FFF;
+  top: 85px;
+  right: 380px;
 }
 ///////////////// GRIDSTER STYLES /////////////////
 
