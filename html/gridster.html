@@ -40,13 +40,18 @@
 
     <!-- button to add location. now invisible. -->
     <div id="addButton">
-      <i class="foundicon-plus" ></i>
+      <i class="foundicon-search" ></i>
     </div>
   </div>
 
   <div id="addLocationButton">
-      <a href="#" data-reveal-id="addLocationModal">
-add a location <div class="theButton"><i class="foundicon-plus" ></i></div></a>
+    <a href="#" data-reveal-id="addLocationModal">
+      add a location
+      <div class="theButton">
+        <i class="foundicon-plus" >
+        </i>
+      </div>
+    </a>
   </div>
 
   <!-- Vancouver dropdown
@@ -384,6 +389,13 @@ add a location <div class="theButton"><i class="foundicon-plus" ></i></div></a>
       $('#addLocationModalButton').click(function(){
           $('#ubcCover').hide();
         });
+      //END enter on location add
+      
+      //START open athens page
+      $('#addButton').click(function(){
+          window.location = 'athens.html';
+        });
+      //END open athens page
   </script>
   
 

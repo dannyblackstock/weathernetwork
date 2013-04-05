@@ -66,21 +66,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 #search {
   margin: 15px 0 0 90px;
   float:left;
-  width: 430px;
+  width: 400px;
+  height: 28px;
 }
 
 input {
   //width:535px;
-  width: 400px;
+  width: 350px;
   height:30px;
+  float: left;
 }
 
 #addButton{
   font-size: 40px;
   color: #555;
   float: right;
-  margin: 10px 0 0 0;
-  display: none;
+  margin: -3px 0 0 0;
+  //display: none;
 
   transition: color 0.2s;
   -moz-transition: color 0.2s;
@@ -188,7 +190,7 @@ input {
 .reveal-modal .close-reveal-modal {
   color: #FFF;
   top: 85px;
-  right: 380px;
+  right: 580px;
 }
 ///////////////// GRIDSTER STYLES /////////////////
 
