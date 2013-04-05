@@ -264,34 +264,64 @@
   </div>
 </div>
 
-  <!-- Gridster
-  <div>
-    <div class="gridster">
+<!-- this bad boy starts hidden on document.ready() -->
+<div id="athensGridster"> 
+  <div id="athensGridsterTitle">
+    Athens, Georgia
+    <span style="font-size: 20px;">
+          <i class="foundicon-plus" >
+        </i>
+      </span>
+  </div>
+      <div class="gridster">
         <ul id="resizable">
 
             <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
               <div id="currentWeather" data-magellan-destination="currentWeather">
-                <img src="../images/current-weather.png">
+                <img src="../images/athens_panels/current-weather.png">
               </div>
             </li>
 
             <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
-              <img src="../images/what-to-wear.png">
+              <img src="../images/athens_panels/what-to-wear.png">
             </li>
 
             <li data-row="2" data-col="1" data-sizex="3" data-sizey="1">
-              <img src="../images/7-day-forecast.png">
+              <img src="../images/athens_panels/7-day-forecast.png">
             </li>
 
             <li data-row="3" data-col="1" data-sizex="3" data-sizey="1">
               <div id="news" data-magellan-destination="news">
-                <img src="../images/news.png">
+                <img src="../images/athens_panels/news.png">
+              </div>
+            </li>
+
+            <li data-row="4" data-col="1" data-sizex="3" data-sizey="1">
+              <div id="social" data-magellan-destination="social">
+                <img src="../images/athens_panels/social.png">
+              </div>
+            </li>
+
+            <li data-row="5" data-col="1" data-sizex="3" data-sizey="1">
+              <div id="maps" data-magellan-destination="maps">
+                <img src="../images/athens_panels/map.png">
+              </div>
+            </li>
+
+            <li data-row="6" data-col="1" data-sizex="1" data-sizey="1">
+              <div id="photo-video" data-magellan-destination="photo-video">
+                <img src="../images/athens_panels/photos.png">
+              </div>
+            </li>
+            <li data-row="6" data-col="1" data-sizex="2" data-sizey="1">
+              <div id="photo-video" data-magellan-destination="photo-video">
+                <img src="../images/athens_panels/videos.png">
               </div>
             </li>
 
         </ul>
     </div>
-  </div> -->
+  </div>
 
   <!-- START Foundation scripts -->
   <script>
@@ -347,6 +377,7 @@
   <script>
     //START Magellan easing effect
     $(document).ready(function(){
+      $('#athensGridster').hide(); //hide the athens gridster
       $('a[href*=#]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         && location.hostname == this.hostname) {
@@ -390,10 +421,10 @@
           $('#ubcCover').hide();
         });
       //END enter on location add
-      
+
       //START open athens page
       $('#addButton').click(function(){
-          window.location = 'athens.html';
+           $('#athensGridster').slideToggle(500);
         });
       //END open athens page
   </script>
