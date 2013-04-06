@@ -39,7 +39,7 @@
     <!-- City selection -->
     <header id="citySelect" class="row">
       <div class="small-10 columns">
-        <ul class="inline-list floatLeft">
+        <ul id="cityList" class="inline-list floatLeft">
           <li><a href="#vancouver">Vancouver, BC</a></li>
           <li><a href="#ubc">UBC, BC</a></li>
         </ul>
@@ -192,11 +192,11 @@ $(document).foundation();
     // tabContainers: the stuff inside every city tab
     var tabContainers = $('div#cityTabs > div');
 
-    $('#citySelect a').click(function () {
+    $('#cityList a').click(function () {
         tabContainers.hide(500).filter(this.hash).show(500);
         
         // remove all items's selected status, and add it to this clicked one
-        $('#citySelect a').removeClass('selected');
+        $('#cityList a').removeClass('selected');
         $(this).addClass('selected');
         
         return false;
