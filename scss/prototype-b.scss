@@ -3,7 +3,7 @@
 
 /*.section .title {
   width: 33.33%;
-}*/
+}
 
 dl dt {
   float:left;
@@ -32,19 +32,9 @@ h3.temperature {
   font-weight: 200;
 }
 
-#addButton {
-  color: #555;
-  float: right;
-
-  transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s;
-}
-
 .mainContent {
   padding: 0;
-}
+}*/
 
 #logo {
   text-align: right;
@@ -59,27 +49,30 @@ a.selected {
 
 .floatLeft {
   float: left;
-  margin-right:1em;
+  margin-right:1.1em;
 }
 
 .floatRight {
   float: right;
+
 }
 
-/*#athens {
-  z-index: 100;
-  /*position: absolute;
-  top:150px;
-  left: 130px;
-  
-  background-color: white;
-  border: solid 1px;
-  border-color: #CCC;
+#ubcLink {
+  display: none;
+}
 
-  font-size:30px;
-  font-weight: 100;
+/*#athensTitle, #athens {
+  display: none;
 }*/
 
-#ubcLink, #athensTitle, #athens {
-  display: none;
+#vancouver, #ubc, #athens {
+  clear:both;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+#athensTitle {
+  color: #005370;
 }

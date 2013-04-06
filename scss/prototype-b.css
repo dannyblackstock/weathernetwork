@@ -4096,39 +4096,38 @@ table {
 
 /*.section .title {
   width: 33.33%;
-}*/
+}
+
 dl dt {
-  float: left; }
+  float:left;
+}
 
 h3.temperature {
   font-size: 8em;
-  margin: 0; }
+  margin: 0;
+}
 
 #autocomplete {
-  font-size: 18px; }
+  font-size: 18px;
+
+}
 
 #mainTitle {
   font-size: 30px;
   font-weight: bold;
   color: #016091;
-  float: left; }
+  float: left;
+}
 
 .cityTitle {
   float: left;
   font-size: 18px;
-  font-weight: 200; }
-
-#addButton {
-  color: #555;
-  float: right;
-  transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s; }
+  font-weight: 200;
+}
 
 .mainContent {
-  padding: 0; }
-
+  padding: 0;
+}*/
 #logo {
   text-align: right; }
 
@@ -4140,23 +4139,22 @@ a.selected {
 
 .floatLeft {
   float: left;
-  margin-right: 1em; }
+  margin-right: 1.1em; }
 
 .floatRight {
   float: right; }
 
-  /*#athens {
-  z-index: 100;
-  /*position: absolute;
-  top:150px;
-  left: 130px;
-  
-  background-color: white;
-  border: solid 1px;
-  border-color: #CCC;
-
-  font-size:30px;
-  font-weight: 100;
-}*/
-#ubcLink, #athensTitle, #athens {
+#ubcLink {
   display: none; }
+
+/*#athensTitle, #athens {
+  display: none;
+}*/
+#vancouver, #ubc, #athens {
+  clear: both; }
+
+h1 {
+  margin-bottom: 0; }
+
+#athensTitle {
+  color: #005370; }

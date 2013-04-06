@@ -38,65 +38,22 @@
     
     <!-- City selection -->
     <header id="citySelect">
+      <ul id="athensTitle" class="inline-list floatLeft">
+        <li><a href="#athens"></a><strong>Now Viewing: Athens, GA</strong></li>
+      </ul>
       <ul id="cityList" class="inline-list floatLeft">
         <li><a href="#vancouver">Vancouver, BC</a></li>
         <li id="ubcLink"><a href="#ubc">UBC, BC</a></li>
+        <li id="athensLink"><a href="#athens">Athens, GA</a></li>
       </ul>
       <ul class="inline-list floatLeft">
         <li><a href="#" data-reveal-id="addLocationModal">
           <i class="foundicon-plus"></i> add a location</a></li>
       </ul>
-      <ul id="athensTitle" class="inline-list floatRight">
-        <li><a href="#athens">Now Viewing: Athens, GA</a></li>
-      </ul>
     </header>
 
     <!-- MAIN AREA -->
-    <div id="vancouver" class="section-container tabs" data-section="tabs">
-      <!-- Weather -->
-      <section class="section">
-        <p class="title">
-          <a href="#weather" style="padding:0;">
-            <img src="../images/02/forecast-tab.png"/>
-          </a>
-        </p>
-        <div class="content" style="padding-top: 0; padding-bottom: 0;">
-          <div class="row">
-            <img src="../images/02/forecast.png">
-          </div>
-        </div>
-      </section>
-
-      <!-- Maps -->
-      <section class="section">
-        <p class="title">
-          <a href="#maps" style="padding:0;"> 
-            <img src="../images/02/maps-tab.png"/> 
-          </a>
-        </p>
-        <div class="content">
-          <div class="row">
-            <img src="../images/02/maps.png">
-          </div>
-        </div>
-      </section>
-      
-      <!-- News / Media -->
-      <section class="section">
-        <p class="title">
-          <a href="#newsmedia" style="padding:0;">
-            <img src="../images/02/news-media-tab.png"/>
-          </a>
-        </p>
-        <div class="content">
-          <div class="row">
-            <img src="../images/02/news-media.png"/>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div id="ubc" class="section-container tabs" data-section="tabs">
+    <div id="athens" class="section-container tabs" data-section="tabs">
       <!-- Weather -->
       <section class="section">
         <p class="title">
@@ -139,6 +96,7 @@
         </div>
       </section>
     </div>
+
   </div>
 </div>
 
@@ -174,7 +132,7 @@ $(document).foundation();
 </script>
 
 <!-- START jQuery search everything script -->
-  <script>
+<script>
   $(function() {
     var availableTags = [
       "UBC, Vancouver, BC", "University of British Columbia, Vancouver, BC", "Athens, Georgia", "Athens, Greece", "Coquitlam, BC", "Surrey, BC", "Simon Fraser University, Burnaby, BC", "Burnaby, BC", "Richmond, BC", "Athens, ON", "News: Huge Asteroid Explodes", "News: Local Hail Storm", "Maps: Africa" , "Maps: BC" , "Photo: Hispters" , "Photo: Vancouver Centre" , "News: Snow Day in Denmark"
@@ -183,7 +141,7 @@ $(document).foundation();
       source: availableTags
     });
   });
-  </script>
+</script>
 <!-- END jQuery search everything script -->
 
 <!-- START jQuery Autocomplete script -->
@@ -196,29 +154,31 @@ $(document).foundation();
       source: availableTags
     });
   });
-  </script>
+</script>
 <!-- END jQuery add location script -->
 
 <script>
   $(document).ready(function(){
-    $('#athensTitle').hide();
+    $('#ubcLink').show();
+    $('#athensLink').hide();
+    $('#athens').show();//css('display','block');
+    $('#athensTitle').show();
   });
-
   // START tabs script
-  $(function () {
+  /*$(function () {
     // tabContainers: the stuff inside every city tab
     var tabContainers = $('div#cityTabs > div');
 
     $('#cityList a').click(function () {
         tabContainers.hide(500).filter(this.hash).show(500);
         
-        // remove all items's selected status, and add it to this clicked one
+         //remove all items's selected status, and add it to this clicked one
         $('#cityList a').removeClass('selected');
         $(this).addClass('selected');
         
         return false;
     }).filter(':first').click();
-  });
+  });*/
   //END tabs script
 
   //START enter on location add
