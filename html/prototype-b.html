@@ -25,173 +25,75 @@
 <!-- LOGO AND SEARCH -->
 <div class="row">
   <div class="small-2 columns">
-    <img src="http://placehold.it/166&text=TWN">
+    <img id="logo" src="../images/02/logo.png">
   </div>
   <div class="small-10 columns">
-    <div class="row">
-      <div class="small-12 columns">
-        <h1>
-          <input id="autocomplete mainTitle" type="text" placeholder="Search The Weather Network">
-        </h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="small-12 columns">
-        <ul class="small-block-grid-6">
-          <li><a href="#"><div class="cityTitle">VANCOUVER</div></a></li>
-          <li><a href="#"><div class="cityTitle">BURNABY</div></a></li>
-          <li><a href="#"><div class="cityTitle">SURREY</div></a></li>
-          <li><a href="#"><div class="cityTitle">WHISTLER</div></a></li>
-          <li><a href="#"><div class="cityTitle">CALGARY</div></a></li>
-          <li><a href="#"><h6><i class="foundicon-plus"></i> <small>add a location</small></h6></a></li>
-        </ul>
-      </div>
-      <div class="small-1 columns">
-        <div id="addButton">
-          <h1></h1>
-        </div>
-      </div>
-    </div>
+    <input type="text" id="searchTags" name="search" placeholder="Search" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555;"/>
   </div>
 </div>
 
-<!-- MAIN AREA -->       <!-- BEWARE: The images on the tabs are nonresponsive. And IDK why it messes up half the time lol -->
+<!-- CITY TABS -->
 <div class="row">
-  <div class="small-12 columns">
-    <div class="section-container tabs" data-section="tabs">
-      <!-- Weather -->
-      <section class="section">
-        <p class="title button"><a href="#weather"> <img src="http://placehold.it/248x60&text=Forecast" /> </a></p>
-        <div class="content">
-          <div class="row">
-            <div class="small-8 columns">
-              <div class="row">
-                <div class="small-4 columns">
-                  <img src="http://placehold.it/175">
-                </div>
-                <div class="small-4 columns">
-                  <h3 class="temperature">7&deg;</h3>
-                </div>
-                <div class="small-4 columns">
-                  <dl>
-                    <dt>Feels Like:</dt><dd>7&deg;</dd>
-                    <dt>Wind:</dt><dd>N 5km/h</dd>
-                    <dt>Humidity:</dt><dd>50%</dd>
-                    <dt>P.O.P.:</dt><dd>30%</dd>
-                  </dl>
-                </div>
-              </div>
+  <div class="small-10 small-offset-2 columns">
+    <div class="row">
+      <ul class="small-10 columns inline-list">
+        <li><a href="#">Vancouver, BC</a></li>
+        <li><a href="#">UBC, BC</a></li>
+        <li><a href="#"><i class="foundicon-plus"></i> add a location</a></li>
+      </ul>
+    </div>
+    <!-- MAIN AREA -->
+    <div class="row">
+      <div class="small-10 columns">
+        <div class="section-container tabs" data-section="tabs">
+          <!-- Weather -->
+          <section class="section">
+            <p class="title">
+              <a href="#weather">
+                <img src="../images/02/forecast-tab.png"/>
+              </a>
+            </p>
+            <div class="content">
               <div class="row">
                 <div class="small-12 columns">
-                  <h4>Herr Forecast</h4><hr>
-                  <div class="row">
-                    <div class="small-3 columns">
-                      <p><img src="http://placehold.it/100"></p>
-                      7&deg;
-                    </div>
-                    <div class="small-3 columns">
-                      <p><img src="http://placehold.it/100"></p>
-                      7&deg;
-                    </div>
-                    <div class="small-3 columns">
-                      <p><img src="http://placehold.it/100"></p>
-                      7&deg;
-                    </div>
-                    <div class="small-3 columns">
-                      <p><img src="http://placehold.it/100"></p>
-                      7&deg;
-                    </div>
-                  </div>
+                  <img src="../images/02/forecast.png">
                 </div>
               </div>
             </div>
-            <div class="small-4 columns"> 
-              <h4>Whart to where</h4><hr>
-              <img src="http://placehold.it/300x400">
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- Maps -->
-      <section class="section">
-        <p class="title button"><a href="#maps"> <img src="http://placehold.it/248x60&text=Maps" /> </a></p>
-        <div class="content">
-          <p><img src="http://www.theweathernetwork.com/common/maps/satrad/westcoast/is_satrad_na_ca_westcoast_all_en.jpg"></p>
+          <!-- Maps -->
+          <section class="section">
+            <p class="title">
+              <a href="#maps"> 
+                <img src="../images/02/maps-tab.png"/> 
+              </a>
+            </p>
+            <div class="content">
+              <p><img src="../images/02/maps.png"></p>
+            </div>
+          </section>
+          
+          <!-- News / Media -->
+          <section class="section">
+            <p class="title">
+              <a href="#newsmedia">
+                <img src="../images/02/news-media-tab.png"/>
+              </a>
+            </p>
+            <div class="content">
+              <div class="row">
+                <img src="..images/02/news-media.png"/>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-      
-      <!-- News / Media -->
-      <section class="section">
-        <p class="title button"><a href="#newsmedia"> <img src="http://placehold.it/248x60&text=News+and+Media" /> </a></p>
-        <div class="content">
-          <div class="row">
-            <div class="small-4 columns">
-              <a class="th" href="#">
-                <h6>News</h6>
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <h6>More...</h6>
-              </a>
-            </div>
-            <div class="small-4 columns">
-              <a class="th" href="#">
-                <h6>Photos</h6>
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <h6>More...</h6>
-              </a>
-            </div>
-            <div class="small-4 columns">
-              <a class="th" href="#">
-                <h6>Videos</h6>
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <img src="http://placehold.it/300x100">
-              </a>
-              <a class="th" href="#">
-                <h6>More...</h6>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
+
   </div>
-</div>
+
+
 
 <!-- Footer -->
 <footer class="row">
