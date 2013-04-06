@@ -91,7 +91,10 @@
         </p>
         <div class="content">
           <div class="row">
-            <img src="../images/02/news-media.png"/>
+            <img src="../images/02/news-media.png" usemap="#videomap"/>
+            <map name="videomap">
+              <area shape="rect" coords="368,355,493,467" href="#" data-reveal-id="videoModal">
+            </map>
           </div>
         </div>
       </section>
@@ -100,8 +103,14 @@
   </div>
 </div>
 
-<div id="addLocationModal" class="reveal-modal">
-  <h2>Add a location </h2>
+<div id="videoModal" class="reveal-modal">
+  <h2>Athens Video</h2>
+  <iframe width="853" height="480" src="http://www.youtube.com/embed/OZtl6TCi7mI" frameborder="0" allowfullscreen></iframe>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="addLocationModal" class="reveal-modal small">
+  <h2>Add a location</h2>
   <input id="locationTags" name="search" placeholder="Find a City" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555;"/>
   <div id="addLocationModalButton">
     <div class="button close-reveal-modal">Add</div>
