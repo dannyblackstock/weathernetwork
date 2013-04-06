@@ -25,95 +25,130 @@
 <!-- LOGO AND SEARCH -->
 <div class="row">
   <div class="small-2 columns">
-    <img id="logo" src="../images/02/logo.png">
+    <h1 id="logo"><img src="../images/02/logo.png"></h1>
   </div>
   <div class="small-10 columns">
-    <input type="text" id="searchTags" name="search" placeholder="Search" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555;"/>
+    <h1><input type="text" id="searchTags" name="search" placeholder="Search" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555;"/></h1>
   </div>
 </div>
 
 <!-- CITY TABS -->
 <div class="row">
-  <div class="small-10 small-offset-2 columns">
-    <div class="row">
-      <ul class="small-10 columns inline-list">
-        <li><a href="#">Vancouver, BC</a></li>
-        <li><a href="#">UBC, BC</a></li>
-        <li><a href="#"><i class="foundicon-plus"></i> add a location</a></li>
-      </ul>
-    </div>
-    <!-- MAIN AREA -->
-    <div class="row">
+  <div id="cityTabs" class="small-10 small-offset-2 columns">
+    
+    <!-- City selection -->
+    <header id="citySelect" class="row">
       <div class="small-10 columns">
-        <div class="section-container tabs" data-section="tabs">
-          <!-- Weather -->
-          <section class="section">
-            <p class="title">
-              <a href="#weather">
-                <img src="../images/02/forecast-tab.png"/>
-              </a>
-            </p>
-            <div class="content">
-              <div class="row">
-                <div class="small-12 columns">
-                  <img src="../images/02/forecast.png">
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Maps -->
-          <section class="section">
-            <p class="title">
-              <a href="#maps"> 
-                <img src="../images/02/maps-tab.png"/> 
-              </a>
-            </p>
-            <div class="content">
-              <p><img src="../images/02/maps.png"></p>
-            </div>
-          </section>
-          
-          <!-- News / Media -->
-          <section class="section">
-            <p class="title">
-              <a href="#newsmedia">
-                <img src="../images/02/news-media-tab.png"/>
-              </a>
-            </p>
-            <div class="content">
-              <div class="row">
-                <img src="..images/02/news-media.png"/>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-
-<!-- Footer -->
-<footer class="row">
-  <div class="large-12 columns">
-    <hr>
-    <div class="row">
-      <div class="large-6 columns">
-        <p>&copy; Copyright no one at all. Go to town.</p>
-      </div>
-      <div class="large-6 columns">
-        <ul class="inline-list right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Site Map</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="inline-list floatLeft">
+          <li><a href="#vancouver">Vancouver, BC</a></li>
+          <li><a href="#ubc">UBC, BC</a></li>
+        </ul>
+        <ul class="inline-list floatLeft">
+          <li><a href="#" data-reveal-id="addLocationModal">
+            <i class="foundicon-plus"></i> add a location</a></li>
         </ul>
       </div>
+    </header>
+
+    <!-- MAIN AREA -->
+    <div id="vancouver" class="section-container tabs" data-section="tabs">
+      <!-- Weather -->
+      <section class="section">
+        <p class="title">
+          <a class="mainContent" href="#weather" style="padding:0;">
+            <img src="../images/02/forecast-tab.png"/>
+          </a>
+        </p>
+        <div class="content">
+          <div class="row">
+            <img src="../images/02/forecast.png">
+          </div>
+        </div>
+      </section>
+
+      <!-- Maps -->
+      <section class="section">
+        <p class="title">
+          <a class="mainContent" href="#maps" style="padding:0;"> 
+            <img src="../images/02/maps-tab.png"/> 
+          </a>
+        </p>
+        <div class="content">
+          <div class="row">
+            <img src="../images/02/maps.png">
+          </div>
+        </div>
+      </section>
+      
+      <!-- News / Media -->
+      <section class="section">
+        <p class="title">
+          <a class="mainContent" href="#newsmedia" style="padding:0;">
+            <img src="../images/02/news-media-tab.png"/>
+          </a>
+        </p>
+        <div class="content">
+          <div class="row">
+            <img src="../images/02/news-media.png"/>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <div id="ubc" class="section-container tabs" data-section="tabs">
+      <!-- Weather -->
+      <section class="section">
+        <p class="title">
+          <a class="mainContent" href="#weather" style="padding:0;">
+            <img src="../images/02/forecast-tab.png"/>
+          </a>
+        </p>
+        <div class="content">
+          <div class="row">
+            <img src="../images/02/forecast.png">
+          </div>
+        </div>
+      </section>
+
+      <!-- Maps -->
+      <section class="section">
+        <p class="title">
+          <a class="mainContent" href="#maps" style="padding:0;"> 
+            <img src="../images/02/maps-tab.png"/> 
+          </a>
+        </p>
+        <div class="content">
+          <div class="row">
+            <img src="../images/02/maps.png">
+          </div>
+        </div>
+      </section>
+      
+      <!-- News / Media -->
+      <section class="section">
+        <p class="title">
+          <a class="mainContent" href="#newsmedia" style="padding:0;">
+            <img src="../images/02/news-media-tab.png"/>
+          </a>
+        </p>
+        <div class="content">
+          <div class="row">
+            <img src="../images/02/news-media.png"/>
+          </div>
+        </div>
+      </section>
+    </div>
+
   </div>
-</footer>
+</div>
+
+<div id="addLocationModal" class="reveal-modal">
+  <h2>Add a location </h2>
+  <input id="locationTags" name="search" placeholder="      search" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555;"/>
+  <div id="addLocationModalButton">
+    <div class="button close-reveal-modal">Add</div>
+  </div>
+</div>
 
 <script>
 document.write('<script src=' +
@@ -138,15 +173,37 @@ document.write('<script src=' +
 $(document).foundation();
 </script>
 
-<!-- autocomplete goodness -->
-  <script>
-  $(document).ready(function() {
-    $("input#autocomplete").autocomplete({
-      // searchable item list
-      source: ["Athens, Georgia", "Athens, Greece", "Coquitlam, British Columbia", "Surrey, British Columbia", "Burnaby, British Columbia", "Richmond, British Columbia", "Athens, Ontario"]
-      });
+<!-- START jQuery Autocomplete script -->
+<script>
+  $(function() {
+    var availableTags = [
+      "UBC, Vancouver, BC", "University of British Columbia, Vancouver, BC", "Athens, Georgia", "Athens, Greece", "Coquitlam, BC", "Surrey, BC", "Simon Fraser University, Burnaby, BC", "Burnaby, BC", "Richmond, BC", "Athens, ON"
+    ];
+    $( "#locationTags" ).autocomplete({
+      source: availableTags
     });
-  </script>
+  });
+</script>
+  <!-- END jQuery add location script -->
+
+<script>
+  // START tabs script
+  $(function () {
+    // tabContainers: the stuff inside every city tab
+    var tabContainers = $('div#cityTabs > div');
+
+    $('#citySelect a').click(function () {
+        tabContainers.hide(500).filter(this.hash).show(500);
+        
+        // remove all items's selected status, and add it to this clicked one
+        $('#citySelect a').removeClass('selected');
+        $(this).addClass('selected');
+        
+        return false;
+    }).filter(':first').click();
+  });
+  //END tabs script
+</script> 
 
 </body>
 </html>

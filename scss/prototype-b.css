@@ -4125,3 +4125,19 @@ h3.temperature {
   -moz-transition: color 0.2s;
   -webkit-transition: color 0.2s;
   -o-transition: color 0.2s; }
+
+.mainContent {
+  padding: 0; }
+
+#logo {
+  text-align: right; }
+
+a {
+  color: #96C5D6; }
+
+a.selected {
+  color: #005370; }
+
+.floatLeft {
+  float: left;
+  margin-right: 1em; }
