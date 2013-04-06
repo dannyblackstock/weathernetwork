@@ -61,3 +61,25 @@ a.selected {
   float: left;
   margin-right:1em;
 }
+
+.floatRight {
+  float: right;
+}
+
+/*#athens {
+  z-index: 100;
+  /*position: absolute;
+  top:150px;
+  left: 130px;
+  
+  background-color: white;
+  border: solid 1px;
+  border-color: #CCC;
+
+  font-size:30px;
+  font-weight: 100;
+}*/
+
+#ubcLink, #athensTitle, #athens {
+  display: none;
+}

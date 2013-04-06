@@ -25,10 +25,10 @@
 <!-- LOGO AND SEARCH -->
 <div class="row">
   <div class="small-2 columns">
-    <h1 id="logo"><img src="../images/02/logo.png"></h1>
+    <h1 id="logo" style="margin-bottom: 0;"><a href="prototype-b.html"><img src="../images/02/logo.png"></a></h1>
   </div>
   <div class="small-10 columns">
-    <h1><input type="text" id="searchTags" name="search" placeholder="Search" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555;"/></h1>
+    <h1 style="margin-bottom: 0;"><input type="text" id="searchTags" name="search" placeholder="Search The Weather Network" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555; margin-bottom: 0;"/></h1>
   </div>
 </div>
 
@@ -37,17 +37,18 @@
   <div id="cityTabs" class="small-10 small-offset-2 columns">
     
     <!-- City selection -->
-    <header id="citySelect" class="row">
-      <div class="small-10 columns">
-        <ul id="cityList" class="inline-list floatLeft">
-          <li><a href="#vancouver">Vancouver, BC</a></li>
-          <li><a href="#ubc">UBC, BC</a></li>
-        </ul>
-        <ul class="inline-list floatLeft">
-          <li><a href="#" data-reveal-id="addLocationModal">
-            <i class="foundicon-plus"></i> add a location</a></li>
-        </ul>
-      </div>
+    <header id="citySelect">
+      <ul id="cityList" class="inline-list floatLeft">
+        <li><a href="#vancouver">Vancouver, BC</a></li>
+        <li id="ubcLink"><a href="#ubc">UBC, BC</a></li>
+      </ul>
+      <ul class="inline-list floatLeft">
+        <li><a href="#" data-reveal-id="addLocationModal">
+          <i class="foundicon-plus"></i> add a location</a></li>
+      </ul>
+      <ul id="athensTitle" class="inline-list floatRight">
+        <li><a href="#athens">Now Viewing: Athens, GA</a></li>
+      </ul>
     </header>
 
     <!-- MAIN AREA -->
@@ -59,7 +60,7 @@
             <img src="../images/02/forecast-tab.png"/>
           </a>
         </p>
-        <div class="content">
+        <div class="content" style="padding-top: 0; padding-bottom: 0;">
           <div class="row">
             <img src="../images/02/forecast.png">
           </div>
@@ -138,13 +139,61 @@
         </div>
       </section>
     </div>
+  </div>
+</div>
 
+<!-- ATHENS! -->
+<div class="row">
+  <div class="small-10 small-offset-2 columns">
+    <div id="athens" class="section-container tabs" data-section="tabs">
+      <!-- Weather -->
+      <section class="section">
+        <p class="title">
+          <a class="mainContent" href="#weather" style="padding:0;">
+            <img src="../images/02/forecast-tab.png"/>
+          </a>
+        </p>
+        <div class="content">
+          <div class="row">
+            <img src="../images/02/forecast.png">
+          </div>
+        </div>
+      </section>
+
+      <!-- Maps -->
+      <section class="section">
+        <p class="title">
+          <a class="mainContent" href="#maps" style="padding:0;"> 
+            <img src="../images/02/maps-tab.png"/> 
+          </a>
+        </p>
+        <div class="content">
+          <div class="row">
+            <img src="../images/02/maps.png">
+          </div>
+        </div>
+      </section>
+
+      <!-- News / Media -->
+      <section class="section">
+        <p class="title">
+          <a class="mainContent" href="#newsmedia" style="padding:0;">
+            <img src="../images/02/news-media-tab.png"/>
+          </a>
+        </p>
+        <div class="content">
+          <div class="row">
+            <img src="../images/02/news-media.png"/>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
 
 <div id="addLocationModal" class="reveal-modal">
   <h2>Add a location </h2>
-  <input id="locationTags" name="search" placeholder="      search" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555;"/>
+  <input id="locationTags" name="search" placeholder="Find a City" onfocus="if (this.value==this.defaultValue) this.value='';" style="color: #555;"/>
   <div id="addLocationModalButton">
     <div class="button close-reveal-modal">Add</div>
   </div>
@@ -173,8 +222,21 @@ document.write('<script src=' +
 $(document).foundation();
 </script>
 
-<!-- START jQuery Autocomplete script -->
+<!-- START jQuery search everything script -->
 <script>
+  $(function() {
+    var availableTags = [
+      "UBC, Vancouver, BC", "University of British Columbia, Vancouver, BC", "Athens, Georgia", "Athens, Greece", "Coquitlam, BC", "Surrey, BC", "Simon Fraser University, Burnaby, BC", "Burnaby, BC", "Richmond, BC", "Athens, ON", "News: Huge Asteroid Explodes", "News: Local Hail Storm", "Maps: Africa" , "Maps: BC" , "Photo: Hispters" , "Photo: Vancouver Centre" , "News: Snow Day in Denmark"
+    ];
+    $( "#searchTags" ).autocomplete({
+      source: availableTags
+    });
+  });
+</script>
+<!-- END jQuery search everything script -->
+
+<!-- START jQuery Autocomplete script -->
+  <script>
   $(function() {
     var availableTags = [
       "UBC, Vancouver, BC", "University of British Columbia, Vancouver, BC", "Athens, Georgia", "Athens, Greece", "Coquitlam, BC", "Surrey, BC", "Simon Fraser University, Burnaby, BC", "Burnaby, BC", "Richmond, BC", "Athens, ON"
@@ -184,9 +246,12 @@ $(document).foundation();
     });
   });
 </script>
-  <!-- END jQuery add location script -->
+<!-- END jQuery add location script -->
 
 <script>
+  $(document).ready(function(){
+    
+  });
   // START tabs script
   $(function () {
     // tabContainers: the stuff inside every city tab
@@ -203,6 +268,24 @@ $(document).foundation();
     }).filter(':first').click();
   });
   //END tabs script
+
+  //START enter on location add
+  $('#addLocationModalButton').click(function(){
+      $('#ubcLink').show();
+    });
+  //END enter on location add
+
+  //START enter on search bar
+  $('#searchTags').keypress(function(e){
+    if(e.which == 13) {
+      $('#vancouver').hide();
+      $('#ubc').hide();
+      $('#athensTitle').show();
+      $('#athens').show();
+    }
+});
+  //END enter on search bar
+
 </script> 
 
 </body>
