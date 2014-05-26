@@ -4252,9 +4252,15 @@ input {
   right: 580px; }
 
 #athensGridster {
-  z-index: 10; }
+  z-index: 10;
+  min-height: 1000px;
+  position: absolute;
+  top: 43px;
+  left: 140px; }
   #athensGridster #athensGridsterTitle {
-    padding: 10px; }
+    padding: 0 0 31px 230px; }
+  #athensGridster .gridster {
+    height: 1000px; }
 
 #openVideo {
   margin: -170px 0 0 270px; }
