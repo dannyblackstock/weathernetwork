@@ -200,23 +200,31 @@ input {
 .reveal-modal .close-reveal-modal {
   color: #FFF;
   top: 85px;
-  right: 580px;
+  left: 405px;
+  right: initial;
 }
 
 #athensGridster {
   z-index: 10;
-  min-height: 1000px;
+  width: 1200px;
   position: absolute;
   top: 43px;
-  left: 140px;
+  left: -30px;
 
   #athensGridsterTitle {
-    padding: 0 0 31px 230px;
+    padding: 0px 0 31px 420px;
   }
 
   .gridster {
-    // background-color: white;
-    height: 1000px;
+    min-height: 2000px;
+    background-color: #FFF;
+    // min-width: 1200px;
+    // position: absolute;
+    // left: -173px;
+  }
+
+  #resizable {
+    width: 870px !important;
   }
 }
 
