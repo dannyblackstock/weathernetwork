@@ -6,11 +6,11 @@
 }
 
 .arrow-down {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  
+
   border-top: 7px solid #016091;
 
   float: right;
@@ -131,7 +131,7 @@ input {
   position: absolute;
   cursor:default;
   z-index:9999 !important;
-}  
+}
 
 .tabsTest{
   float:left;
@@ -143,15 +143,15 @@ input {
   height: 2000px;
 }
 
-#vancouver{
-  width:1000px;
-  height: 1500px;
-}
+// #vancouver{
+//   width:1000px;
+//   height: 1500px;
+// }
 
-#ubc{
-  width:1000px;
-  height: 1500px;
-}
+// #ubc{
+//   width:1000px;
+//   height: 1500px;
+// }
 
 #ubcCover {
   width: 140px;
@@ -221,11 +221,16 @@ input {
         background-color: white;
         list-style-type: none; //remove bullet points
         padding: 0;
+        position: absolute;
         //width: 150px;
         //height: 300px;
         //border: solid 2px black;
       }
-  } 
+
+      * {
+        max-height: 275px;
+      }
+  }
 
   .gridster > * {
       margin: 0 auto;

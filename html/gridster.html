@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
 
   <!-- gridster -->
-  <script src="https://raw.github.com/ducksboard/gridster.js/master/dist/jquery.gridster.js"></script>
+  <script src="https://rawgithub.com/ducksboard/gridster.js/master/dist/jquery.gridster.js"></script>
 
   <script type="text/javascript" src="gridster_config.js"></script>
 
@@ -61,7 +61,7 @@
       <div class="floatLeft">VANCOUVER, BC</div>
     </a>
     <div class="arrow-down"></div>
-    
+
   </div>
   -->
   <!-- Favourite locations dropdown content
@@ -84,10 +84,10 @@
           <li data-magellan-arrival="search">
 
             <!-- <a href="#search">
-            
+
             The next line focuses on the searchbar right away. Glitches the easing. Depends how much we care about looking glitchy.-->
             <a href="#search" onclick="document.getElementById('searchTags').focus();">
-            
+
               <img src="../images/icons/search.png">
             </a>
           </li>
@@ -117,7 +117,7 @@
               <img src="../images/icons/maps.png">
             </a>
           </li>
-          
+
           <li class="sidebarLine"></li>
 
           <li data-magellan-arrival="social">
@@ -196,8 +196,12 @@
 
             <li data-row="6" data-col="1" data-sizex="2" data-sizey="1">
               <div id="photo-video" data-magellan-destination="photo-video">
-                    <img src="../images/van_ubc_panels/videos.png">
-                    <div id="openVideo"><a href="#" data-reveal-id="videoModal">view</a></div>
+                <img src="../images/van_ubc_panels/videos.png">
+                <div id="openVideo">
+                  <a href="#" data-reveal-id="videoModal">
+                    view
+                  </a>
+                </div>
               </div>
             </li>
 
@@ -269,7 +273,7 @@
 </div>
 
 <!-- this bad boy starts hidden on document.ready() -->
-<div id="athensGridster"> 
+<div id="athensGridster">
   <div id="athensGridsterTitle">
     Athens, Georgia
     <span style="font-size: 20px;">
@@ -404,17 +408,17 @@
         });
       });
       //END adding cities to dropdown script
-      
+
       // START tabs script
       $(function () {
         var tabContainers = $('div.tabs > div');
-    
+
         $('div.tabs ul.tabNavigation a').click(function () {
             tabContainers.hide(500).filter(this.hash).show(500);
-            
+
             $('div.tabs ul.tabNavigation a').removeClass('selected');
             $(this).addClass('selected');
-            
+
             return false;
         }).filter(':first').click();
       });
@@ -432,7 +436,7 @@
         });
       //END open athens page
   </script>
-  
+
 
 </body>
 </html>
