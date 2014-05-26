@@ -177,6 +177,16 @@ input {
     //width: 150px;
     //height: 300px;
     //border: solid 2px black;
+    cursor:move;
+    cursor:hand;
+    cursor:grab;
+    cursor:-moz-grab;
+    cursor:-webkit-grab;
+    &.dragging {
+      cursor:grabbing;
+    cursor:-moz-grabbing;
+    cursor:-webkit-grabbing;
+    }
   }
   a {
     color: #96C5D6;

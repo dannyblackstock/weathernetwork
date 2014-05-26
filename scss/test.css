@@ -4231,7 +4231,16 @@ input {
     display: inline;
     background-color: white;
     list-style-type: none;
-    padding: 0 20px 0 0; }
+    padding: 0 20px 0 0;
+    cursor: move;
+    cursor: hand;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab; }
+    .tabs li.dragging {
+      cursor: grabbing;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing; }
   .tabs a {
     color: #96C5D6; }
   .tabs a.selected {
